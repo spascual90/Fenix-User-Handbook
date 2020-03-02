@@ -146,7 +146,7 @@ The 6 stable positions could be in any direction, but make sure that the device 
 Magnetometer in general are susceptible to both hard-iron and soft-iron distortions, but majority of the cases are rather due to the former. And the steps mentioned below are to calibrate the magnetometer for hard-iron distortions. Nevertheless certain precautions need to be taken into account during the positioning of the sensor to avoid unnecessary magnetic influences.
 {% endhint %}
 
-* [x] Verify Magnetometer calibration: Make additional random movements to cover all different yaw, pitch and roll angles. Keep on moving until MAG register is stable.
+* [x] Verify Magnetometer calibration: Make additional random movements to cover all different yaw, pitch and roll angles. Make smooth and fast movements. Make movements until MAG register is stable.
 
 {% hint style="warning" %}
 Verify Magnetometer calibration step IS A MUST to ensure valid calibration values.
