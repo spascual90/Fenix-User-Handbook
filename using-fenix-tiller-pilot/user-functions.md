@@ -152,13 +152,17 @@ Magnetometer in general are susceptible to both hard-iron and soft-iron distorti
 Verify Magnetometer calibration step IS A MUST to ensure valid calibration values.
 {% endhint %}
 
-You can find below a tutorial by IMU BNO055 Manufacturer.
+You can find below a Video tutorial by IMU BNO055 Manufacturer.
 
 {% embed url="https://youtu.be/Bw0WuAyGsnY" %}
 
 
 
 ### Save compass offsets
+
+Execute this function to save calibration values.
+
+Once the compass is calibrated and values saved, the calibration profile will be reused to get the correct orientation data immediately after Power-on Autopilot.
 
 ### Start linear actuator calibration
 
