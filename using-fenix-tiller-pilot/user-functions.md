@@ -4,6 +4,11 @@
 
 ### Switch working mode from STAND BY to AUTO
 
+This function allows user to change Autopilot working mode from one to the other alternatively.
+
+* Executed in Stand by mode, it will switch to Auto mode.
+* Executed in Auto mode, it will switch to Stand by mode.
+
 ### Enter into Track mode
 
 ## Rudder control
