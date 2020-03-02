@@ -16,7 +16,7 @@
 
 ### Reduce Current Rudder by 10 Position Unit.
 
-## Course to Steer control
+## Control Course to Steer
 
 ### Increment CTS by 1º
 

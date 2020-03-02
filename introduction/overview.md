@@ -15,14 +15,14 @@ The tiller pilot has three basic operating modes:
 Fenix tiller pilot can implement different devices to control the autopilot. 
 
 {% hint style="info" %}
-At least one Control Device shall be available with minimum User Functions implemented. For the purpose of this guide, Virtuino Mobile App will be considered.
+At least one Control Device shall be available with minimum User Functions implemented.
 {% endhint %}
 
 ### Virtuino Mobile App
 
 An App based on Virtuino is available to Android OS mobiles.
 
-This App provides full capability to control tiller pilot and limited configuration capabilities.
+This App provides full capability to control tiller pilot.
 
 ### $PEMC Serial Interface
 
