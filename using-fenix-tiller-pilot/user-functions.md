@@ -41,7 +41,7 @@ Perform a SHORT RETRACTION of the linear actuator to decrease current rudder ang
 
 ### Reduce Current Rudder by 10 Position Unit.
 
-Perform a LONG EXTENSION of the linear actuator to increase current rudder angle.
+Perform a LONG RETRACTION of the linear actuator to increase current rudder angle.
 
 ## Control Course to Steer
 
