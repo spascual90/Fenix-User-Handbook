@@ -9,6 +9,8 @@ This function allows user to change Autopilot working mode from Stand-by to Auto
 * Executed in Stand-by mode, Autopilot will switch to Auto mode.
 * Executed in Auto mode, Autopilot will switch to Stand-by mode.
 
+Virtuino app version
+
 ### Enter into Track mode
 
 ## Rudder control
