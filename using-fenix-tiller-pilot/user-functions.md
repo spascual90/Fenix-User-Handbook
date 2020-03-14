@@ -127,9 +127,6 @@ This function allows user to calibrate internal IMU.
 To calibrate BNO055 IMU sensor follow the steps:
 
 * [x] Gyroscope Calibration: Place the device in a single stable position to allow the gyroscope to calibrate. Keep this position for a period of few seconds until GYRO register indicates fully calibrated.
-
-
-
 * [x] Accelerometer Calibration: Place the device in 6 different stable positions for a period of few seconds to allow the accelerometer to calibrate. Repeat until 
 
   the ACC register indicates fully calibrated.
