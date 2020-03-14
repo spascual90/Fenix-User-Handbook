@@ -4,14 +4,14 @@
 
 1. Steady the boat on the required heading.
 2. Place the pushrod over the tiller pin. If necessary, extend or retract the pushrod using [Rudder Control](user-functions.md#rudder-control). 
-3. [Switch working mode from STAND BY to AUTO](user-functions.md#switch-working-mode-from-stand-by-to-auto): the tiller pilot will enter Auto mode and the display will show `tbd`. 
+3. [Switch working mode from STAND BY to AUTO](user-functions.md#switch-working-mode-from-stand-by-to-auto): the tiller pilot will enter Auto mode. 
 
 ## Disengaging the autopilot \(Standby mode\) 
 
 To return to hand steering:
 
 1. [Switch working mode from AUTO to STAND BY](user-functions.md#switch-working-mode-from-stand-by-to-auto):  
-2. Remove the pushrod from the tiller pin to return to hand steering: the display will show `tbd`.
+2. Remove the pushrod from the tiller pin to return to hand steering.
 3. The last heading is memorized and can be recalled \([Returning to previous Heading](using-auto-mode.md#returning-to-the-previous-heading)\)
 
 ## Changing course
@@ -64,14 +64,12 @@ By preventing unnecessary rudder movement, Auto Deadband provides the best compr
 
 If you want to switch off the Auto Deadband feature: 
 
-1. From Stand by, Auto or Track mode, [Set new Autopilot gain](user-functions.md)  and change parameter  `Deadband Type` to switch from Auto to Fixed Deadband:
+1. From Stand by, Auto or Track mode, [Set new Autopilot gain](user-functions.md)  and change parameter  `Deadband Type` to switch from Auto \(`A`\) to Fixed Deadband:
 
-* [x] Fixed Minimum Deadband: Minimum deadband provides the tightest course keeping possible, at the expense of increased power consumption and drive unit activity.
-* [x] Fixed Maximum Deadband: Maximum deadband provides the loosest course keeping, maximizing power saving and minimizing drive unit activity.
+* [x] Fixed Minimum Deadband \(`m`\): Minimum deadband provides the tightest course keeping possible, at the expense of increased power consumption and drive unit activity.
+* [x] Fixed Maximum Deadband \(`M`\): Maximum deadband provides the loosest course keeping, maximizing power saving and minimizing drive unit activity.
 
 To switch back to Auto Deadband, 
 
-1. [Set new Autopilot gain](user-functions.md)  and change parameter  `Deadband Type` to Auto
-
-
+1. [Set new Autopilot gain](user-functions.md)  and change parameter  `Deadband Type` to Auto \(`A`\)
 
