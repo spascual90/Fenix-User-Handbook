@@ -1,53 +1,30 @@
-# System Interfaces
+# Annex A: System Interfaces
 
 ## OpenCPN NMEA I/F
 
 OpenCPN integrates GPS and plotter capabilities to provide user with all required means to define a route and send it to Fenix Autopilot. OpenCPN is required for Nav mode.
 
-Fenix and OpenCPN implements an I/F in both directions
+Fenix and OpenCPN implements NMEA I/F in both directions
 
 ###  Data sent by OpenCPN to Fenix Autopilot in ALL working modes from different sources:
 
 *  **Windvane and calculations**
-  *  apparent wind angle \(AWA\)
-  *  apparent wind speed \(AWS\)
-  *  true wind speed \(TWS\)
-  *  true wind angle \(TWA\)
-*  **External Compass \(only in External Compass mode\):**
-  *  Magnetic heading \(HDM\)
-  *  heel angle \(HEL, HRM\) Heeling Angle in degrees of the port/starboard inclination of the boat.
-*  **GPS Fix**
-  *  speed over ground \(SOG/SPD\)
-  *  course over ground \(COG/TRK\)
-*  **Speed Log**
-  *  boat speed trough water \(STW\)
+* **External Compass \(only in External Compass mode\):**
+* **GPS Fix**
+* **Speed Log**
+
+{% hint style="warning" %}
+Feature not available in V0.1
+{% endhint %}
 
 ###  Data sent by OpenCPN to Fenix Autopilot in NAV Mode:
 
 *  **Route**
-  *  Cross Track Error \(XTE\) - Minimum distance to route.
-  *  Distance To Next Waypoint \(DTW\)
-  *  Origin Waypoint \(WPT XXXX\)
-  *  Next Waypoint ID \(APB-WPT\)
-  *  Next Waypoint \(WPT XXXX\)
-*  **Angles**
-  *  Bearing Origin to Next Waypoint \(BOD\) - M or T
-  *  Bearing, present position To Next Waypoint \(BTW/BRG\)
-  *  Turn \(TRN\) - Difference between TRK and BRG
-  *  Course To Steer to Next Waypoint \(CTS\) - An average value between BRG and XTE angle.
-*  **Time**
-  *  Estimated Time En-route \(ETE\) How much time it takes to arrive?
-  *  Estimated Time to Arrival \(ETA\) ¿At what time are we going to arrive?
-*  **Speed**
-  *  Velocity made good \(VMG\) - Diference in distance to the WP. May be negative
+  *   Next Waypoint ID \(APB-WPT\)
 
-####  Message: $RMC-
-
-$GPRMC,083551.353,V,3554.931,N,07402.499,W,75.9,3.41,071218,,E\*45
-
-$GPRMC,083552.353,V,3554.932,N,07402.500,W,63.7,3.37,071218,,E\*4C
-
-$GPRMC,083553.353,V,3554.933,N,07402.502,W,26.9,3.45,071218,,E\*44
+{% hint style="warning" %}
+Feature available with limitations in V0.1: Only APB message decoded.
+{% endhint %}
 
 ####  Message: $APB - Autopilot Sentence "B"
 
@@ -89,18 +66,6 @@ $GPAPB,A,A,0.1,R,K,V,V,0.12,M,DEST,11.50,M,9.03,M\*1B
 
 *  **Internal compass \(in Internal Compass Mode only\):**
 
-Message: $HDG - Heading - Deviation & Variation
-
-| Field | Value | Function |
-| :--- | :--- | :--- |
-| 1 | Float x.x | Magnetic Sensor heading in degrees |
-| 2 | Float x.x | Magnetic Deviation, degrees |
-| 3 | E | Magnetic Deviation direction, E = Easterly |
-| 3 | W | Magnetic Deviation direction, W = Westerly |
-| 4 | Float x.x | Magnetic Variation degrees |
-| 5 | E | Magnetic Variation direction, E = Easterly |
-| 5 | W | Magnetic Variation direction, W = Westerly |
-
 Message: $HDM - Heading Magnetic
 
 | Field | Value | Function |
@@ -115,8 +80,7 @@ Message: $HDT - Heading True
 | 1 | Float x.x | Heading Degrees, true |
 | 2 | T | T=True |
 
-*  Heel angle \(HEL, HRM\) Heeling Angle in degrees of the port/starboard inclination of the boat.
-*  **Rudder position**
+* **Rudder position**
 
 Message: $RSA - Rudder Sensor Angle
 
@@ -127,11 +91,19 @@ Message: $RSA - Rudder Sensor Angle
 | 3 | Float x.x | Port rudder sensor |
 | 4 | A | Status, A means data is valid |
 
-##  Serial HMI I/F
+##  Serial I/F
 
 ### Checksum
 
 In order to generate $PEMC messages to be accepted by Fenix Autopilot, a checksum code shall be annexed after \* symbol.
+
+{% hint style="info" %}
+Serial I/F examples in this User Guide represent Checksum code as `xx`. To use these examples you should substitute `xx` by the calculated Checksum value.
+
+`Serial I/F Example: $PEMC,00*xx`
+
+`Serial I/F Valid Sentence: $PEMC,00*37`
+{% endhint %}
 
 In this link you will find an online Checksum calculator  
 

@@ -9,7 +9,19 @@ This function allows user to change Autopilot working mode from Stand-by to Auto
 * Executed in Stand-by mode, Autopilot will switch to Auto mode.
 * Executed in Auto mode, Autopilot will switch to Stand-by mode.
 
+![Virtuino App: Press Execution button at Main page](../.gitbook/assets/screenshot-1584266653119.jpg)
+
+> #### Serial I/F $PEMC Code: 00
+>
+> Serial I/F Sentence: $PEMC,00\*37
+
 ### Enter into Track mode
+
+#### Accept or Reject Autopilot action
+
+Some actions require use confirmation before execution.
+
+![Virtuino App: Press Execution button at Main page](../.gitbook/assets/screenshot-1584266653119.jpg)
 
 ## Rudder control
 
@@ -20,60 +32,96 @@ Rudder control functions are only available in Stand by mode.
 {% endhint %}
 
 {% hint style="info" %}
-Behaviour will be different depenting on Autopilot installation side, startboard or portboard.
+Behaviour will be different depenting on the value of installation parameter`Installation Side` , startboard \(`S`\) or portboard \(`P`\).
 {% endhint %}
 
 {% hint style="warning" %}
-In Fenix V0.1, the value of`Installation Side` parameter is always `STARBOARD` 
+In Fenix V0.1, the value of installation parameter`Installation Side` is always startboard \(`S`\)
 {% endhint %}
+
+> #### Serial I/F $PEMC Code: 01
+>
+> Serial I/F Sentence example: $PEMC,01,r\*68
 
 ### Increment Current Rudder by 1 Position Unit.
 
 Perform a SHORT EXTENSION of the linear actuator to increase current rudder angle.
 
+![Virtuino App: In Stand by mode, press +1 button at Main page](../.gitbook/assets/screenshot-1584266646684.jpg)
+
+> Serial I/F Example: $PEMC,01,i\*xx
+
 ### Increment Current Rudder by 10 Position Unit.
 
-Perform a LONG EXTENSION of the linear actuator to increase current rudder angle..
+Perform a LONG EXTENSION of the linear actuator to increase current rudder angle.
+
+![Virtuino App: In Stand by mode, press +10 button at Main page](../.gitbook/assets/screenshot-1584266631637.jpg)
+
+> Serial I/F Example: $PEMC,01,I\*xx
 
 ### Reduce Current Rudder by 1 Position Unit.
 
 Perform a SHORT RETRACTION of the linear actuator to decrease current rudder angle.
 
+![Virtuino App: In Stand by mode, press -1 button at Main page](../.gitbook/assets/screenshot-1584266641595.jpg)
+
+> Serial I/F Example: $PEMC,01,r\*xx
+
 ### Reduce Current Rudder by 10 Position Unit.
 
 Perform a LONG RETRACTION of the linear actuator to increase current rudder angle.
+
+![Virtuino App: In Stand by mode, press -10 button at Main page](../.gitbook/assets/screenshot-1584266602456.jpg)
+
+> Serial I/F Example: $PEMC,01,R\*xx
 
 ## Control Course to Steer
 
 This set of functions allows user to change CTS angle.
 
 {% hint style="info" %}
-If executed in Stand-by mode, target CTS will be changed and will only take effect once autopilot is in Auto mode.
+If executed in Stand-by mode, Target CTS will be changed and will only take effect once autopilot is in Auto mode.
 {% endhint %}
+
+> #### Serial I/F $PEMC Code: 02
+>
+> Serial I/F Sentence example: $PEMC,02,i\*70
 
 ### Increment CTS by 1º
 
 Increment CTS value in 1º
 
+> Serial I/F Example: $PEMC,02,i\*xx
+
 ### Increment CTS by 10º
 
 Increment CTS value in 10º
+
+> Serial I/F Example: $PEMC,02,I\*xx
 
 ### Reduce CTS by 1º
 
 Reduce CTS value in 1º
 
+> Serial I/F Example: $PEMC,02,r\*xx
+
 ### Reduce CTS by 10º
 
 Reduce CTS value in 10º
+
+> Serial I/F Example: $PEMC,02,R\*xx
+
+### Set CTS
+
+Set CTS to a defined value.
+
+![Virtuino App: turn center weel to point target CTS at CTS page](../.gitbook/assets/screenshot-1584266816399.jpg)
 
 ### Return to initial CTS
 
 Restore CTS to initial CTS value \(CTS when switched to Auto mode\).
 
-### Accept Autopilot action
-
-### Reject Autopilot action
+![Virtuino App: press Target CTS button at Main page](../.gitbook/assets/screenshot-1584266673484.jpg)
 
 ## Autopilot monitoring
 

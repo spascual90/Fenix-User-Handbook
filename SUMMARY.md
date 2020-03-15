@@ -11,7 +11,7 @@
 * [Overview](using-fenix-tiller-pilot/overview.md)
 * [Using Auto Mode](using-fenix-tiller-pilot/using-auto-mode.md)
 * [User functions](using-fenix-tiller-pilot/user-functions.md)
-* [System Interfaces](using-fenix-tiller-pilot/untitled.md)
+* [Annex A: System Interfaces](using-fenix-tiller-pilot/untitled.md)
 
 ## Maintenance and Troubleshooting
 
