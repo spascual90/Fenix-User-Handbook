@@ -32,15 +32,25 @@ Feature not available in v.0.1
 
 To avoid an obstacle when your boat is under autopilot control, 
 
-1. select a course change in the appropriate direction. For example, press -10 three times for a 30°dodge to port.
-2. When safely clear of the obstacle, you can either:
+1. select a course change in the appropriate direction. 
 
-* [x] reverse the previous course change \(for example, by pressing +10 three times\), or
+> For example,
+
+![In Virtuino App, press +10 three times for a 30&#xB0;dodge to port.](../.gitbook/assets/screenshot-1584267226756.jpg)
+
+![In Virtuino App, New CTS is 54&#xBA;](../.gitbook/assets/screenshot-1584267241304.jpg)
+
+When safely clear of the obstacle, you can either:
+
+* [x] reverse the previous course change \(for example, by pressing -10 three times\), or
 * [x] return to the previous heading \(see below\)
 
 ### Returning to the previous heading
 
 1. Use [Return to initial CTS](user-functions.md#return-to-initial-cts)
+2. CTS will change to initial value when Auto mode was selected.
+
+![In Virtuino App, press Return to initial CTS button](../.gitbook/assets/screenshot-1584267350950.jpg)
 
 ## Off course alarm
 

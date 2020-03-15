@@ -9,6 +9,10 @@ This function allows user to change Autopilot working mode from Stand-by to Auto
 * Executed in Stand-by mode, Autopilot will switch to Auto mode.
 * Executed in Auto mode, Autopilot will switch to Stand-by mode.
 
+{% hint style="info" %}
+`Initial CTS` value will be set to Heading value. This is useful for later execution of [Return to initial CTS](user-functions.md#return-to-initial-cts) function.
+{% endhint %}
+
 ![Virtuino App: Press Execution button at Main page](../.gitbook/assets/screenshot-1584266653119.jpg)
 
 > #### Serial I/F $PEMC Code: 00
@@ -21,7 +25,7 @@ This function allows user to change Autopilot working mode from Stand-by to Auto
 
 Some actions require use confirmation before execution.
 
-![Virtuino App: Press Execution button at Main page](../.gitbook/assets/screenshot-1584266653119.jpg)
+![Virtuino App: Press Execution button at Main page to Accept autopilot action](../.gitbook/assets/screenshot-1584266653119.jpg)
 
 ## Rudder control
 
@@ -119,7 +123,7 @@ Set CTS to a defined value.
 
 ### Return to initial CTS
 
-Restore CTS to initial CTS value \(CTS when switched to Auto mode\).
+Restore CTS to `Initial CTS` value.
 
 ![Virtuino App: press Target CTS button at Main page](../.gitbook/assets/screenshot-1584266673484.jpg)
 
@@ -138,6 +142,14 @@ Restore CTS to initial CTS value \(CTS when switched to Auto mode\).
 
 ### Get Installation Parameters
 
+To relinquish Autopilot current installation parameters.
+
+> **Serial I/F $PEMC Code: 08**
+>
+> Serial I/F Sentence: $PEMC,08,I\*5A
+
+![In Virtuino App at Gain page: Centered Tiller Position value is displayed.](../.gitbook/assets/screenshot_20200215-114829.png)
+
 * Centered Tiller Position
 * Maximum rudder angle
 * Average Cruise Speed
@@ -150,6 +162,14 @@ Restore CTS to initial CTS value \(CTS when switched to Auto mode\).
 ### Set Installation Parameters
 
 ### Get current Autopilot gain
+
+To relinquish Autopilot current Autopilot gain values including deadband.
+
+> **Serial I/F $PEMC Code: 08**
+>
+> Serial I/F Sentence: $PEMC,08,G\*54
+
+![In Virtuino App at Gain page:  KP, KI, KD coeficients and DB Value are displayed.](../.gitbook/assets/screenshot_20200215-114829.png)
 
 * Kp
 * Ki
