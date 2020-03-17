@@ -140,6 +140,18 @@ Restore CTS to `Initial CTS` value.
 
 ## Configuration control
 
+{% hint style="warning" %}
+Virtuino App provides limited funtionalities to manage autopilot configurations in Virtuino for Fenix App v0.1. 
+{% endhint %}
+
+{% hint style="info" %}
+Calibration of IMU and linear actuator must be performed before first use.
+{% endhint %}
+
+{% hint style="info" %}
+Autopilot provides initial default settings, however Installation and Gain Parameters might require customization to specific boat and installation conditions.
+{% endhint %}
+
 ### Get Installation Parameters
 
 To relinquish Autopilot current installation parameters.
@@ -148,7 +160,11 @@ To relinquish Autopilot current installation parameters.
 >
 > Serial I/F Sentence: $PEMC,08,I\*5A
 
-![In Virtuino App at Gain page: Centered Tiller Position value is displayed.](../.gitbook/assets/screenshot_20200215-114829.png)
+
+
+
+
+![Gain page in Virtuino App](../.gitbook/assets/screenshot_20200215-114829.png)
 
 * Centered Tiller Position
 * Maximum rudder angle
@@ -161,26 +177,46 @@ To relinquish Autopilot current installation parameters.
 
 ### Set Installation Parameters
 
-### Get current Autopilot gain
 
-To relinquish Autopilot current Autopilot gain values including deadband.
+
+## Gain Parameters
+
+Gain Parameters are,
+
+* `Kp`
+* `Ki`
+* `Kd`
+* `Sample Time`
+* `Deadband type: Auto (A) , min (m), max (M)`
+
+### Get current Gain Parameters
+
+This function allows user to relinquish Autopilot current Autopilot Gain Parameters.
 
 > **Serial I/F $PEMC Code: 08**
 >
 > Serial I/F Sentence: $PEMC,08,G\*54
 
-![In Virtuino App at Gain page:  KP, KI, KD coeficients and DB Value are displayed.](../.gitbook/assets/screenshot_20200215-114829.png)
+Virtuino App V0.1 provides the following information,
 
-* Kp
-* Ki
-* Kd
-* Sample Time
-* Deadband type \(auto, min, max\)
-* Deadband value
+* [x] Current weight of P, I, D factors in the overal PID output.
+* [x] Current Gain parameters: KP, KI, KD
+* [x] PID Error
+* [x] PID Output
+* [x] Deadband light: On if current Heading within deadband.
+* [x] Deadband value
 
-### Set new Autopilot gain
+![Gain page in Virtuino App ](../.gitbook/assets/screenshot_20200215-114829.png)
 
-### Save current Autopilot gain
+### Set new Gain Parameters
+
+This function allows user to upload  a new set of Autopilot Gain Parameters.
+
+{% hint style="warning" %}
+
+{% endhint %}
+
+## Save current Parameters
 
 ## Commissioning Functions
 

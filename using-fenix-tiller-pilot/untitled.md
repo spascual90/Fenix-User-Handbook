@@ -1,4 +1,4 @@
-# Annex A: System Interfaces
+# Annex A: Serial Interface
 
 ## OpenCPN NMEA I/F
 
@@ -8,7 +8,7 @@ Fenix and OpenCPN implements NMEA I/F in both directions
 
 ###  Data sent by OpenCPN to Fenix Autopilot in ALL working modes from different sources:
 
-*  **Windvane and calculations**
+* **Windvane and calculations**
 * **External Compass \(only in External Compass mode\):**
 * **GPS Fix**
 * **Speed Log**
@@ -113,7 +113,7 @@ In this link you will find an online Checksum calculator
 
 
 
-### Message: $PEMC [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=8)
+### $PEMC Message
 
 <table>
   <thead>
@@ -137,49 +137,56 @@ In this link you will find an online Checksum calculator
       <td style="text-align:left">1</td>
       <td style="text-align:left">01</td>
       <td style="text-align:left">Change Current Rudder</td>
-      <td style="text-align:left">2: Change rate</td>
+      <td style="text-align:left"><a href="untitled.md#additional-field-change-rate">2: Change rate</a>
+      </td>
       <td style="text-align:left">$PEMC,01,r*68</td>
     </tr>
     <tr>
       <td style="text-align:left">1</td>
       <td style="text-align:left">02</td>
       <td style="text-align:left">Change CTS (Current Target Steering)</td>
-      <td style="text-align:left">2: Change rate</td>
+      <td style="text-align:left"><a href="untitled.md#additional-field-change-rate">2: Change rate</a>
+      </td>
       <td style="text-align:left">$PEMC,02,i*70</td>
     </tr>
     <tr>
       <td style="text-align:left">1</td>
       <td style="text-align:left">03</td>
       <td style="text-align:left">Get Installation Parameters</td>
-      <td style="text-align:left">2: Installation Parameters</td>
+      <td style="text-align:left"><a href="untitled.md#additional-field-installation-parameters">2: Installation Parameters</a>
+      </td>
       <td style="text-align:left">$PEMC,03,2,45,5,S,2,-3.2,-32.9,10*xx</td>
     </tr>
     <tr>
       <td style="text-align:left">1</td>
       <td style="text-align:left">04</td>
       <td style="text-align:left">Set Installation Parameters</td>
-      <td style="text-align:left">2: Installation Parameters</td>
+      <td style="text-align:left"><a href="untitled.md#additional-field-installation-parameters">2: Installation Parameters</a>
+      </td>
       <td style="text-align:left">$PEMC,04,2,40,4,S,3,4.1,33.9,9*xx</td>
     </tr>
     <tr>
       <td style="text-align:left">1</td>
       <td style="text-align:left">05</td>
       <td style="text-align:left">Get PID gain (incl. sample time and deadband)</td>
-      <td style="text-align:left">2: PID Gain</td>
+      <td style="text-align:left"><a href="untitled.md#additional-field-pid-gain">2: PID Gain</a>
+      </td>
       <td style="text-align:left">$PEMC,05,2,0.01,0.5,1000,A*xx</td>
     </tr>
     <tr>
       <td style="text-align:left">1</td>
       <td style="text-align:left">06</td>
       <td style="text-align:left">Set PID gain (inc. sample time and deadband)</td>
-      <td style="text-align:left">2: PID Gain</td>
+      <td style="text-align:left"><a href="untitled.md#additional-field-pid-gain">2: PID Gain</a>
+      </td>
       <td style="text-align:left">$PEMC,06,3,0.11,0.7,1000,m*xx</td>
     </tr>
     <tr>
       <td style="text-align:left">1</td>
       <td style="text-align:left">07</td>
       <td style="text-align:left">Get Autopilot information</td>
-      <td style="text-align:left">2: APinfo</td>
+      <td style="text-align:left"><a href="untitled.md#additional-field-apinfo">2: APinfo</a>
+      </td>
       <td style="text-align:left">$PEMC,07,S,12,35.60,30.02,2,-0.50*65</td>
     </tr>
     <tr>
@@ -230,7 +237,7 @@ In this link you will find an online Checksum calculator
       </td>
     </tr>
   </tbody>
-</table>####  Additional Field: Change rate [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=9)
+</table>###  Additional Field: Change rate [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=9)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
@@ -239,7 +246,7 @@ In this link you will find an online Checksum calculator
 | n | 'r' | Reduce Current by 1 Position Unit | N/A |
 | n | 'R' | Reduce Current by 10 Position Uni | N/A |
 
-####  Additional Field: Installation Parameters [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=10)
+###  Additional Field: Installation Parameters [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=10)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
@@ -253,7 +260,7 @@ In this link you will find an online Checksum calculator
 | n+6 | Float | Heading Alignment | N/A |
 | n+7 | Positive Int | Off course alarm angle | N/A |
 
-####  Additional Field: PID Gain [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=11)
+###  Additional Field: PID Gain [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=11)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
@@ -265,7 +272,7 @@ In this link you will find an online Checksum calculator
 | n+4 | 'M' | Deadband: Max | N/A |
 | n+4 | 'A' | Deadband: Auto | N/A |
 
-####  Additional Field: APinfo [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=12)
+###  Additional Field: APinfo [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=12)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
