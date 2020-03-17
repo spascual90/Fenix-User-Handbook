@@ -19,7 +19,7 @@
 
 ## Installation & Commissioning <a id="installation-commissioning"></a>
 
-* [Untitled](installation-commissioning/untitled.md)
+* [Commissioning](installation-commissioning/untitled.md)
 
 ## Fenix configuration
 
