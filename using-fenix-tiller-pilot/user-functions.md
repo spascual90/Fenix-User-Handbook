@@ -129,14 +129,39 @@ Restore CTS to `Initial CTS` value.
 
 ## Autopilot monitoring
 
+Autopilot operational status is defined by the following set of parameters,
+
+* `Current Mode: Stand-by (S); Auto (A); Track (T)`
+* `Current Rudder Position`
+* `Heading Magnetic (HDM)`
+* `Course To Steer (CTS) (Magnetic)`
+* `Deadband value`
+* `Trimm`
+
+{% hint style="info" %}
+`Fenix V0.1 limitations:`
+
+`Trimm` is not used.
+{% endhint %}
+
 ### Get Autopilot information
 
-* Current Mode
-* Current Rudder Position
-* Heading Magnetic \(HDM\)
-* Course To Steer \(CTS\)
-* Deadband value
-* Trimm
+This function allows user to relinquish Autopilot current operational status.
+
+> **Serial I/F $PEMC Code: 08**
+>
+> Serial I/F Sentence: $PEMC,08,A\*52
+
+Virtuino App V0.1 provides the following information,
+
+* `Current Mode:` 
+  * `Green light off: Stand-by (S)`
+  * `Green light on: Auto (A) or Track (T)`
+* `Current Rudder Position`
+* `HDG: Heading Magnetic (HDM)`
+* `Course To Steer (CTS) (Magnetic)`
+
+![Main page in Virtuino App](../.gitbook/assets/screenshot-1584266602456.jpg)
 
 ## Configuration control
 
@@ -152,17 +177,26 @@ Calibration of IMU and linear actuator must be performed before first use.
 Autopilot provides initial default settings, however Installation and Gain Parameters might require customization to specific boat and installation conditions.
 {% endhint %}
 
+## Installation Parameters
+
+Installation Parameters are,
+
+* `Centered Tiller Position`
+* `Maximum rudder angle`
+* `Average Cruise Speed`
+* `Installation Side: Starboard (S) or Portboard (P)`
+* `Rudder Damping`
+* `Magnetic Variation`
+* `Heading Alignment`
+* `Off course alarm angle`
+
 ### Get Installation Parameters
 
-To relinquish Autopilot current installation parameters.
+This function allows user to relinquish Autopilot current installation parameters.
 
 > **Serial I/F $PEMC Code: 08**
 >
 > Serial I/F Sentence: $PEMC,08,I\*5A
-
-
-
-
 
 ![Gain page in Virtuino App](../.gitbook/assets/screenshot_20200215-114829.png)
 
@@ -176,6 +210,20 @@ To relinquish Autopilot current installation parameters.
 * Off course alarm angle
 
 ### Set Installation Parameters
+
+This function allows user to upload  a new set of Installation Parameters.
+
+{% hint style="warning" %}
+Uploaded parameters shall be saved for later use.
+{% endhint %}
+
+{% hint style="info" %}
+Fenix V0.1 limitations: 
+
+`Installation Side` cannot be changed. Always set to Starboard \(`S`\).
+
+`Average Cruise Speed` is not used.
+{% endhint %}
 
 
 
@@ -199,21 +247,21 @@ This function allows user to relinquish Autopilot current Autopilot Gain Paramet
 
 Virtuino App V0.1 provides the following information,
 
-* [x] Current weight of P, I, D factors in the overal PID output.
-* [x] Current Gain parameters: KP, KI, KD
-* [x] PID Error
-* [x] PID Output
-* [x] Deadband light: On if current Heading within deadband.
-* [x] Deadband value
+* Current weight of P, I, D factors in the overal PID output. 
+* Current Gain parameters: KP, KI, KD PID 
+* Error
+* PID Output
+* Deadband light: On if current Heading within deadband. 
+* Deadband value
 
 ![Gain page in Virtuino App ](../.gitbook/assets/screenshot_20200215-114829.png)
 
-### Set new Gain Parameters
+### Set Gain Parameters
 
 This function allows user to upload  a new set of Autopilot Gain Parameters.
 
 {% hint style="warning" %}
-
+Uploaded parameters are shall be saved for later use.
 {% endhint %}
 
 ## Save current Parameters
