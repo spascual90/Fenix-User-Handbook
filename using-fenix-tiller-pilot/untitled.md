@@ -1,4 +1,4 @@
-# Annex A: Serial Interface
+# Serial Interface
 
 ## OpenCPN NMEA I/F
 
