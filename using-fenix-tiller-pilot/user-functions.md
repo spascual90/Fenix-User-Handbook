@@ -341,7 +341,7 @@ Once the compass is calibrated and values saved, the calibration profile will be
 >
 > Serial I/F Sentence: $PEMC,11,I\*52
 
-### Start linear actuator calibration
+### Enter/Exit linear actuator calibration mode
 
 This function allows user to enter/ exit linear actuator calibration mode.
 

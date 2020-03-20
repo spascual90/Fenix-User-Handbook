@@ -2,15 +2,19 @@
 
 ## Commissioning Process
 
+This chapter explains how to commission your tiller pilot after installation. This consists of a number of simple functional tests followed by a short sea trial.
+
 Before first use of Fenix Autopilot, user shall go through the complete Commissioning process.
 
-1. Calibrate compass
-2. Calibrate linear actuator
-3. Adjust Installation Parameters
+## Before Autopilot installation
 
-{% hint style="info" %}
-This funcions are only available in Stand-by mode
-{% endhint %}
+These activities shall be performed through Serial I/F and before installing Autopilot into boat,
+
+#### Connect Autopilot to PC/Laptop
+
+* Install serial terminal 
+* Connect Autopilot to Laptop/PC
+* Connect Autopilot to a 12V source \(battery or alternative\)
 
 ### Start compass calibration
 
@@ -45,7 +49,57 @@ You can find below a Video tutorial by IMU BNO055 Manufacturer.
 
 ### Start linear actuator calibration
 
+1. [Enter into linear actuator calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-compass-calibration)
+2. Extend linear actuator
+3. Retract linear actuator
+4. [Exit calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-linear-actuator-calibration)
+5. Save linear actuator offsets
 
+## After Autopilot installation
 
-### Save linear actuator offsets
+### Functional tests
+
+#### Switch on
+
+1. Switch on the main power breaker.
+
+2. The autopilot should beep and display the pilot number \(ST1000 or ST2000\). 
+
+3. Within 2 seconds, the display should show a flashing ‘C’ followed by the compass heading \(for example, C 234\). 
+
+This shows the autopilot is active. Note: If the tiller pilot does not beep or display the compass heading, please refer to the Fault Finding section \(see page 26\).
+
+#### Operating sense
+
+The operating sense defines the direction the tiller pilot will apply helm when a course change key is pressed or the boat goes off course. To check the operating sense:
+
+1. Place the pushrod end over the tiller pin.
+
+2. Press +10.
+
+3. The helm should move to produce a turn to starboard
+
+If the helm produces a turn to port, refer to the following instructions on reversing the operating sense.
+
+#### Reversing the operating sense
+
+{% hint style="danger" %}
+Feature not available in Fenix V0.1.
+{% endhint %}
+
+### Check Interfaces
+
+#### Checking the Serial I/F
+
+#### Checking the Virtuino App interface
+
+#### Checking the OpenCPN interface
+
+{% hint style="warning" %}
+To be completed
+{% endhint %}
+
+### Initial sea trial
+
+### 
 
