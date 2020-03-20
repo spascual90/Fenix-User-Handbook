@@ -32,13 +32,13 @@ If the helm produces a turn to port, refer to the following instructions on reve
 
 #### Reversing the operating sense
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Feature not available in Fenix V0.1.
 {% endhint %}
 
 ## Check Interfaces
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 To be completed
 {% endhint %}
 
@@ -50,7 +50,7 @@ To be completed
 
 ## Initial sea trial
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 To be completed
 {% endhint %}
 

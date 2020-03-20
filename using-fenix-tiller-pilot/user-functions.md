@@ -188,7 +188,7 @@ Autopilot operational status is defined by the following set of parameters,
 * `Deadband value`
 * `Trimm`
 
-{% hint style="info" %}
+{% hint style="warning" %}
 `Fenix V0.1 limitations:`
 
 `Trimm` is not used.
@@ -258,11 +258,15 @@ Virtuino App V0.1 provides the following information at Gain page,
 
 This function allows user to upload  a new set of Installation Parameters.
 
-{% hint style="warning" %}
-Uploaded parameters shall be saved for later use.
-{% endhint %}
+> **Serial I/F $PEMC Code: 04**
+>
+> Serial I/F Example: $PEMC,04,2,40,4,S,3,4.1,33.9,9\*xx
 
 {% hint style="info" %}
+Remember to save values for later use
+{% endhint %}
+
+{% hint style="warning" %}
 Fenix V0.1 limitations: 
 
 `Installation Side` cannot be changed. Always set to Starboard \(`S`\).
@@ -272,7 +276,7 @@ Fenix V0.1 limitations:
 
 ### Save current Installation Parameters
 
-This function allows user to save current Installation Parameters and Linear actuator calibration in the non-volatile memory for later use.
+This function allows user to save current Installation Parameters and Linear actuator off-sets in the non-volatile memory for later use.
 
 Once values are saved, will be reused immediately after Power-on Autopilot.
 
@@ -318,7 +322,7 @@ This function allows user to upload  new set of Autopilot Gain Parameters.
 > Serial I/F Example: $PEMC,06,3,0.11,0.7,1000,m\*xx
 
 {% hint style="info" %}
-Save uploaded parameters for later use.
+Remember to save values for later use
 {% endhint %}
 
 ### Save current Gain Parameters
@@ -360,7 +364,7 @@ This function allows user to enter/ exit linear actuator calibration mode.
 > Serial I/F Sentence: $PEMC,10\*36
 
 {% hint style="info" %}
-Save linear actuator parameters as part of Installation Parameters.
+Remember to save linear actuator off-sets for later use
 {% endhint %}
 
 

@@ -22,7 +22,7 @@
 * [Installation](installation-commissioning/installation.md)
 * [Commissioning](installation-commissioning/untitled.md)
 
-## Fenix configuration
+## CONFIGURATION SETTINGS
 
-* [Untitled](fenix-configuration/untitled.md)
+* [Adjusting Pilot Settings](configuration-settings/adjusting-pilot-settings.md)
 
