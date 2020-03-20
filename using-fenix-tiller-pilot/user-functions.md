@@ -270,6 +270,16 @@ Fenix V0.1 limitations:
 `Average Cruise Speed` is not used.
 {% endhint %}
 
+### Save current Installation Parameters
+
+This function allows user to save current Installation Parameters and Linear actuator calibration in the non-volatile memory for later use.
+
+Once values are saved, will be reused immediately after Power-on Autopilot.
+
+> **Serial I/F $PEMC Code: 11**
+>
+> Serial I/F Sentence: $PEMC,11,I\*52
+
 ## Gain Parameters
 
 Gain Parameters are,
@@ -307,13 +317,13 @@ This function allows user to upload  new set of Autopilot Gain Parameters.
 
 > Serial I/F Example: $PEMC,06,3,0.11,0.7,1000,m\*xx
 
-{% hint style="warning" %}
-Uploaded parameters are shall be saved for later use.
+{% hint style="info" %}
+Save uploaded parameters for later use.
 {% endhint %}
 
 ### Save current Gain Parameters
 
-This function allows user to save current and Gain Parameters in the non-volatile memory for later use.
+This function allows user to save current Gain Parameters in the non-volatile memory for later use.
 
 Once values are saved, will be reused immediately after Power-on Autopilot.
 
@@ -349,7 +359,7 @@ This function allows user to enter/ exit linear actuator calibration mode.
 >
 > Serial I/F Sentence: $PEMC,10\*36
 
-{% hint style="success" %}
+{% hint style="info" %}
 Save linear actuator parameters as part of Installation Parameters.
 {% endhint %}
 
