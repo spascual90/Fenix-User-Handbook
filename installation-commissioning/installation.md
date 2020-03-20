@@ -51,5 +51,5 @@ You can find below a Video tutorial by IMU BNO055 Manufacturer.
 2. [Extend linear actuator](../using-fenix-tiller-pilot/user-functions.md#increment-current-rudder-by-10-position-unit) by pressing +10 up to the complete extension of the linear actuator.
 3. [Retract linear actuator](../using-fenix-tiller-pilot/user-functions.md#reduce-current-rudder-by-10-position-unit) by pressing .10 up to the complete retraction of the linear actuator.
 4. [Exit calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-linear-actuator-calibration)
-5. Save linear actuator offsets
+5. [Save linear actuator offsets](../using-fenix-tiller-pilot/user-functions.md#save-current-installation-parameters)
 
