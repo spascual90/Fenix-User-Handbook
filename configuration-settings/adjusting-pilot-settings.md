@@ -41,6 +41,8 @@ The [Set Gain Parameters](../using-fenix-tiller-pilot/user-functions.md#set-gain
 
 The following steps have to be executed in sequence to change any setting value.
 
+All settings can be changed using the Serial I/F.
+
 {% hint style="info" %}
 Here you can find a [guide on Serial I/F communications](../using-fenix-tiller-pilot/untitled.md#checksum)
 {% endhint %}

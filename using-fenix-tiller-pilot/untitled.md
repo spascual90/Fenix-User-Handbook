@@ -93,6 +93,8 @@ Message: $RSA - Rudder Sensor Angle
 
 ##  Serial I/F
 
+Fenix Autopilot can be connected to a Laptop/PC using a USB port.
+
 ### Checksum
 
 In order to generate $PEMC messages to be accepted by Fenix Autopilot, a checksum code shall be annexed after \* symbol.
