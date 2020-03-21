@@ -12,11 +12,9 @@ Before first use of Fenix Autopilot, user shall go through the complete Commissi
 
 1. Switch on the main power breaker.
 
-2. The autopilot should beep and display the pilot number \(ST1000 or ST2000\). 
+2. The autopilot should beep and display the compass heading. 
 
-3. Within 2 seconds, the display should show a flashing ‘C’ followed by the compass heading \(for example, C 234\). 
-
-This shows the autopilot is active. Note: If the tiller pilot does not beep or display the compass heading, please refer to the Fault Finding section \(see page 26\).
+This shows the autopilot is active. Note: If the tiller pilot does not beep or display the compass heading, please refer to the Fault Finding section.
 
 #### Operating sense
 
