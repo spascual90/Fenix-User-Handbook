@@ -1,50 +1,6 @@
 # Serial Interface
 
-## OpenCPN NMEA I/F
-
-OpenCPN integrates GPS and plotter capabilities to provide user with all required means to define a route and send it to Fenix Autopilot. OpenCPN is required for Nav mode.
-
-Fenix and OpenCPN implements NMEA I/F in both directions
-
-### Data sent by OpenCPN to Fenix Autopilot in ALL working modes from different sources:
-
-* **Windvane and calculations**
-* **External Compass \(only in External Compass mode\):**
-* **GPS Fix**
-* **Speed Log**
-
-{% hint style="warning" %}
-Feature not available in V0.1
-{% endhint %}
-
-### Data sent by OpenCPN to Fenix Autopilot in NAV Mode:
-
-#### Message: $APB - Autopilot Sentence "B" 
-
-* **Route**
-  * Waypoint ID
-  * Course To Steer to Next Waypoint \(CTS\) - Magnetic angle
-  * Cross Track Error \(XTE\)
-  * Arrival Circle Alarm
-  * Perpendicular Circle Alarm
-
-{% hint style="warning" %}
-Feature available with limitations in V0.1: Only APB message decoded.
-{% endhint %}
-
-### Data sent from Fenix Autopilot to OpenCPN in ALL working modes:
-
-#### **Internal compass \(in Internal Compass Mode only\):**
-
-> Message: $HDM - Heading Magnetic
->
-> Message: $HDT - Heading True
-
-#### **Rudder position**
-
-> Message: $RSA - Rudder Sensor Angle
-
-##  Serial I/F
+## Introduction
 
 Fenix Autopilot can be connected to a Laptop/PC using a USB port.
 
@@ -192,7 +148,7 @@ In this link you will find an online Checksum calculator
       </td>
     </tr>
   </tbody>
-</table>###  Additional Field: Change rate [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=9)
+</table>####  Additional Field: Change rate [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=9)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
@@ -201,7 +157,7 @@ In this link you will find an online Checksum calculator
 | n | 'r' | Reduce Current by 1 Position Unit | N/A |
 | n | 'R' | Reduce Current by 10 Position Uni | N/A |
 
-###  Additional Field: Installation Parameters [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=10)
+####  Additional Field: Installation Parameters [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=10)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
@@ -215,7 +171,7 @@ In this link you will find an online Checksum calculator
 | n+6 | Float | Heading Alignment | N/A |
 | n+7 | Positive Int | Off course alarm angle | N/A |
 
-###  Additional Field: PID Gain [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=11)
+####  Additional Field: PID Gain [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=11)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
@@ -227,7 +183,7 @@ In this link you will find an online Checksum calculator
 | n+4 | 'M' | Deadband: Max | N/A |
 | n+4 | 'A' | Deadband: Auto | N/A |
 
-###  Additional Field: APinfo [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=12)
+####  Additional Field: APinfo [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=12)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
@@ -239,4 +195,48 @@ In this link you will find an online Checksum calculator
 | n+3 | Float | Course To Steer \(CTS\) - Magnitude \(M\) | N/A |
 | n+4 | Positive int | Deadband value | N/A |
 | n+5 | Float | Trimming value | N/A |
+
+## OpenCPN NMEA I/F
+
+OpenCPN integrates GPS and plotter capabilities to provide user with all required means to define a route and send it to Fenix Autopilot. OpenCPN is required for Nav mode.
+
+Fenix and OpenCPN implements NMEA I/F in both directions
+
+### Data sent by OpenCPN to Fenix Autopilot in ALL working modes from different sources:
+
+* **Windvane and calculations**
+* **External Compass \(only in External Compass mode\):**
+* **GPS Fix**
+* **Speed Log**
+
+{% hint style="warning" %}
+Feature not available in V0.1
+{% endhint %}
+
+### Data sent by OpenCPN to Fenix Autopilot in NAV Mode:
+
+#### Message: $APB - Autopilot Sentence "B" 
+
+* **Route**
+  * Waypoint ID
+  * Course To Steer to Next Waypoint \(CTS\) - Magnetic angle
+  * Cross Track Error \(XTE\)
+  * Arrival Circle Alarm
+  * Perpendicular Circle Alarm
+
+{% hint style="warning" %}
+Feature available with limitations in V0.1: Only APB message decoded.
+{% endhint %}
+
+### Data sent from Fenix Autopilot to OpenCPN in ALL working modes:
+
+#### **Internal compass \(in Internal Compass Mode only\):**
+
+> Message: $HDM - Heading Magnetic
+>
+> Message: $HDT - Heading True
+
+#### **Rudder position**
+
+> Message: $RSA - Rudder Sensor Angle
 
