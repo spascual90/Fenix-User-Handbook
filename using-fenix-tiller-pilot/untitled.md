@@ -6,7 +6,7 @@ OpenCPN integrates GPS and plotter capabilities to provide user with all require
 
 Fenix and OpenCPN implements NMEA I/F in both directions
 
-###  Data sent by OpenCPN to Fenix Autopilot in ALL working modes from different sources:
+### Data sent by OpenCPN to Fenix Autopilot in ALL working modes from different sources:
 
 * **Windvane and calculations**
 * **External Compass \(only in External Compass mode\):**
@@ -17,79 +17,32 @@ Fenix and OpenCPN implements NMEA I/F in both directions
 Feature not available in V0.1
 {% endhint %}
 
-###  Data sent by OpenCPN to Fenix Autopilot in NAV Mode:
+### Data sent by OpenCPN to Fenix Autopilot in NAV Mode:
 
-*  **Route**
-  *   Next Waypoint ID \(APB-WPT\)
+#### Message: $APB - Autopilot Sentence "B" 
+
+* **Route**
+  * Waypoint ID
+  * Course To Steer to Next Waypoint \(CTS\) - Magnetic angle
+  * Cross Track Error \(XTE\)
+  * Arrival Circle Alarm
+  * Perpendicular Circle Alarm
 
 {% hint style="warning" %}
 Feature available with limitations in V0.1: Only APB message decoded.
 {% endhint %}
 
-####  Message: $APB - Autopilot Sentence "B"
+### Data sent from Fenix Autopilot to OpenCPN in ALL working modes:
 
-| Field | Value | Function |
-| :--- | :--- | :--- |
-| 1 | V | Loran-C Blink or SNR warning. General warning flag or other navigation systems when a reliable fix is not available |
-| 1 | A | A = OK or not used |
-| 2 | V | Loran-C Cycle Lock warning flag |
-| 2 | A | OK or not used |
-| 3 | Float | Cross Track Error \(XTE\) Magnitude - Minimum distance to route |
-| 4 | L | Direction to Steer - Portboard |
-| 4 | R | Direction to Steer - Starboard |
-| 5 | N | Cross Track Error \(XTE\) Units: Nautical miles |
-| 5 | K | Cross Track Error \(XTE\) Units: Kilometers |
-| 6 | V | Arrival Circle Alarm: No alarm |
-| 6 | A | Arrival Circle Alarm: Arrival Circle Entered |
-| 7 | V | Perpendicular Arrival Alarm: No alarm |
-| 7 | A | Perpendicular Arrival Alarm: Perpendicular passed at waypoint |
-| 8 | Float | Bearing Origin to Next Waypoint \(BOD\) - Angle magnitude |
-| 9 | M | Bearing Origin to Next Waypoint \(BOD\) - Magnetic angle |
-| 9 | T | Bearing Origin to Next Waypoint \(BOD\) - True angle |
-| 10 | C--C | Destination Waypoint ID |
-| 11 | Float | Bearing, present position To Next Waypoint \(BTW/BRG\) - Angle magnitude |
-| 12 | M | Bearing, present position To Next Waypoint \(BTW/BRG\) - Magnetic angle |
-| 12 | T | Bearing, present position To Next Waypoint \(BTW/BRG\) - True angle |
-| 13 | Float | Course To Steer to Next Waypoint \(CTS\) - Angle magnitude |
-| 14 | M | Course To Steer to Next Waypoint \(CTS\) - Magnetic angle |
-| 14 | T | Course To Steer to Next Waypoint \(CTS\) - True angle |
+#### **Internal compass \(in Internal Compass Mode only\):**
 
-Example:
+> Message: $HDM - Heading Magnetic
+>
+> Message: $HDT - Heading True
 
-$GPAPB,A,A,0.10,R,N,V,V,011,M,DEST,011,M,011,M\*3C
+#### **Rudder position**
 
-$GPAPB,A,A,0.10,R,N,V,V,012,M,DEST,11.50,M,9.03,M\*00
-
-$GPAPB,A,A,0.1,R,K,V,V,0.12,M,DEST,11.50,M,9.03,M\*1B
-
-###  Data sent from Fenix Autopilot to OpenCPN in ALL working modes:
-
-*  **Internal compass \(in Internal Compass Mode only\):**
-
-Message: $HDM - Heading Magnetic
-
-| Field | Value | Function |
-| :--- | :--- | :--- |
-| 1 | Float x.x | Heading Degrees, magnetic |
-| 2 | M | M=Magnetic |
-
-Message: $HDT - Heading True
-
-| Field | Value | Function |
-| :--- | :--- | :--- |
-| 1 | Float x.x | Heading Degrees, true |
-| 2 | T | T=True |
-
-* **Rudder position**
-
-Message: $RSA - Rudder Sensor Angle
-
-| Field | Value | Function |
-| :--- | :--- | :--- |
-| 1 | Float x.x | Starboard \(or single\) rudder sensor, "-" means Turn To Port |
-| 2 | A | Status, A means data is valid |
-| 3 | Float x.x | Port rudder sensor |
-| 4 | A | Status, A means data is valid |
+> Message: $RSA - Rudder Sensor Angle
 
 ##  Serial I/F
 
