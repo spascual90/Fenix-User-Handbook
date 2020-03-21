@@ -26,3 +26,7 @@
 
 * [Adjusting Pilot Settings](configuration-settings/adjusting-pilot-settings.md)
 
+## ANNEXES
+
+* [PC/Laptop Support Tools](annexes/pc-laptop-support-tools.md)
+

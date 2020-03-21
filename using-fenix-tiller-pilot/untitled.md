@@ -2,7 +2,17 @@
 
 ## Introduction
 
-Fenix Autopilot can be connected to a Laptop/PC using a USB port.
+Fenix Autopilot can be connected to a Laptop/PC via USB port. This provides access to all user functions available to calibrate compass and linear actuator. Also provides full capabilities to customize installation settings and pilot gain.
+
+## Requirements
+
+
+
+* Serial Terminal shall be installed to Laptop/PC to communicate with Autopilot to use Serial Interface \(eg. Arduino IDE, Putty\)
+* [Checksum calculator](untitled.md#checksum)
+* [$PMEC Message specification](untitled.md#usdpemc-message) in this Guide.
+
+
 
 ### Checksum
 
