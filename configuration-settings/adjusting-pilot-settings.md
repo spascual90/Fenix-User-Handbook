@@ -83,5 +83,23 @@ Installation parameters can be set in Stand-by mode only.
 
 ### Kp Ki Kd
 
-### Deadband type
+### Deadband
+
+Deadband is defined as the angle from Average Course to maximum heading deviation caused by periodic forces \(i.e. waves\). Within deadband, actuator shall stay still.
+
+Deadband goal is to attenuate fluctuations in linear actuator position. Using deadband will increase the service life of the actuator.
+
+{% hint style="info" %}
+Is very useful for D-part of PID to avoid extreme output values for small changes \(dx/dt\) in signal.
+{% endhint %}
+
+User can select different Deadband options:
+
+* [x] MIN\_DEADBAND: Fixed to minº
+* [x] MAX\_DEADBAND: Fixed to MAXº
+* [x] AUTO DEADBAND : Based on sea state, autopilot will adapt deadband angle between min and MAX. This value will be recalculated periodically.
+
+{% hint style="info" %}
+If gain parameters are saved, Gain type will be saved and applied per default in the next Autopilot power-on.
+{% endhint %}
 
