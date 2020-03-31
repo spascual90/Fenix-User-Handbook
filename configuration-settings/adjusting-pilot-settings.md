@@ -67,21 +67,72 @@ Installation parameters can be set in Stand-by mode only.
 
 ### Centered Tiller Position
 
+Indicates the linear actuator position when the tiller is aligned with the hull.
+
 ### Maximum rudder angle
+
+Limit maximum angle of the rudder. It is used to prevent the linear actuator exceeding the rudder angle and damaging the boat. Value 0 reference to Centered Tiller Position.
+
+{% hint style="info" %}
+This value will also be the maximum value of the PID Control output**.**
+{% endhint %}
 
 ### Installation Side
 
+Side of the boat where the linear actuator is installed.
+
+* [x] S - Starboard
+* [ ] P - Portboard
+
+{% hint style="warning" %}
+Fenix V0.1 limitation: `Installation Side`is always STARBOARD \(`S`\)
+{% endhint %}
+
 ### Rudder Damping
+
+Error in the linear actuator feedback potenciometer may cause the linear actuator to "hunt" when trying to fix a position. Rudder damping identify accepted maximum error in potenciometer signal.
+
+\(0 to any positive value\). Default: 5º
 
 ### Magnetic Variation
 
+Level of magnetic variation present at the boat's current position.
+
+Compass Variation allows to transform angles referred to Magnetic North to True North and viceversa.
+
+Positive values means variation to East.
+
+Negative values of means variation to West.
+
+\(-45º;+45º\). Default: 0º.
+
+{% hint style="warning" %}
+Fenix V0.1 limitation: Since external compass feature is not implemented, this parameter is always used by the Autopilot, even when information is received from external sources.
+{% endhint %}
+
 ### Heading Alignment
 
+Installation of Autopilot internal IMU \(electronic magnetic compass\) may not be aligned with boat's steering compass, or a known transit bearing.
+
+\(-180º, 180º\); Default: 0º
+
 ### Off course alarm angle
+
+Angle of Off course alarm. This alarm warns if the Autopilot is unable to maintain its course.
+
+\(10º;30º\). Default: 20º.
 
 ## Gain Parameters
 
 ### Kp Ki Kd
+
+These 3 parameters define the behaviour of the Autopilot in Auto and Track modes.
+
+Behaviour and tunning of these parameters are defined in this video.
+
+{% embed url="https://youtu.be/drYO60z6\_h4" %}
+
+
 
 ### Deadband
 
