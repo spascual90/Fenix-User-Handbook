@@ -92,7 +92,7 @@ In this link you will find an online Checksum calculator
       <td style="text-align:left">Get PID gain (incl. sample time and deadband)</td>
       <td style="text-align:left"><a href="untitled.md#additional-field-pid-gain">2: PID Gain</a>
       </td>
-      <td style="text-align:left">$PEMC,05,2,0.01,0.5,1000,A*xx</td>
+      <td style="text-align:left">$PEMC,05,2,0.01,0.5,100,A*xx</td>
     </tr>
     <tr>
       <td style="text-align:left">1</td>
@@ -100,7 +100,7 @@ In this link you will find an online Checksum calculator
       <td style="text-align:left">Set PID gain (inc. sample time and deadband)</td>
       <td style="text-align:left"><a href="untitled.md#additional-field-pid-gain">2: PID Gain</a>
       </td>
-      <td style="text-align:left">$PEMC,06,3,0.11,0.7,1000,m*xx</td>
+      <td style="text-align:left">$PEMC,06,3,0.11,0.7,100,m*xx</td>
     </tr>
     <tr>
       <td style="text-align:left">1</td>
