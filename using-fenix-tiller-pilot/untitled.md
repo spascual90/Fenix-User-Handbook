@@ -32,6 +32,18 @@ In this link you will find an online Checksum calculator
 
 {% embed url="https://youtu.be/ewZ32JuCRZA" %}
 
+#### Set messages: 04 and 06
+
+To keep same value of a parameter while changing others, omit any value in this place.
+
+{% hint style="info" %}
+To set Ki value while keeping Kp and Kd: $PEMC,06,,0.3,,,m\*xx
+{% endhint %}
+
+{% hint style="warning" %}
+Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system will change to `M`.
+{% endhint %}
+
 
 
 ### $PEMC Message
