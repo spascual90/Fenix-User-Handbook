@@ -34,7 +34,7 @@ In this link you will find an online Checksum calculator
 
 #### Set messages: 04 and 06
 
-To keep same value of a parameter while changing others, omit any value in this place.
+To keep same value of a parameter while changing others, omit any value while keeping the commas in place.
 
 {% hint style="info" %}
 To set Ki value while keeping Kp and Kd: $PEMC,06,,0.3,,,m\*xx
