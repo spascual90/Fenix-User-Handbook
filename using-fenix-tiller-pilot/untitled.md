@@ -227,23 +227,111 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 
 #### Additional Field: IMU Cal. values [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=12)
 
-| Field | Value | Function | Additional Field |
-| :--- | :--- | :--- | :--- |
-| n | '-' | Calib. Not started | N/A |
-| n | 'O' | Calib. Ongoing | N/A |
-| n | 'R' | Recalibrated | N/A |
-| n | 'N' | Not calibrated | N/A |
-| n | 'C' | Check ongoing | N/A |
-| n+1 | 1:OK/ 0:NOK | Sys status | N/A |
-| n+2 | 1:OK/ 0:NOK | Gyro status | N/A |
-| n+3 | 1:OK/ 0:NOK | Accel status | N/A |
-| n+4 | 1:OK/ 0:NOK | Magn status | N/A |
-| n+1 | Int \(0, 360\) | X euler angle | N/A |
-| n+2 | Int \(-180, 180\) | Y euler angle | N/A |
-| n+3 | Int \(0, 90\) | Z euler angle | N/A |
-|  |  |  |  |
-
-## OpenCPN NMEA I/F
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Field</th>
+      <th style="text-align:left">Value</th>
+      <th style="text-align:left">Function</th>
+      <th style="text-align:left">Additional Field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">n</td>
+      <td style="text-align:left">&apos;-&apos;</td>
+      <td style="text-align:left">Calib. Not started</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n</td>
+      <td style="text-align:left">&apos;O&apos;</td>
+      <td style="text-align:left">Calib. Ongoing</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n</td>
+      <td style="text-align:left">&apos;R&apos;</td>
+      <td style="text-align:left">Recalibrated</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n</td>
+      <td style="text-align:left">&apos;N&apos;</td>
+      <td style="text-align:left">Not calibrated</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n</td>
+      <td style="text-align:left">&apos;C&apos;</td>
+      <td style="text-align:left">Check ongoing</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n+1</td>
+      <td style="text-align:left">1:OK/ 0:NOK</td>
+      <td style="text-align:left">Sys status. Ony valid when Calib is ongoing</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n+2</td>
+      <td style="text-align:left">1:OK/ 0:NOK</td>
+      <td style="text-align:left">Gyro status. Ony valid when Calib is ongoing</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n+3</td>
+      <td style="text-align:left">1:OK/ 0:NOK</td>
+      <td style="text-align:left">Accel status. Ony valid when Calib is ongoing</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n+4</td>
+      <td style="text-align:left">1:OK/ 0:NOK</td>
+      <td style="text-align:left">Magn status. Ony valid when Calib is ongoing</td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n+5</td>
+      <td style="text-align:left">Int (0, 360)</td>
+      <td style="text-align:left">
+        <p>X euler angle.</p>
+        <p>Ony valid when Check is ongoing</p>
+      </td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n+6</td>
+      <td style="text-align:left">Int (-180, 180)</td>
+      <td style="text-align:left">
+        <p>Y euler angle.</p>
+        <p>Ony valid when Check is ongoing</p>
+      </td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">n+7</td>
+      <td style="text-align:left">Int (0, 90)</td>
+      <td style="text-align:left">
+        <p>Z euler angle.</p>
+        <p>Ony valid when Check is ongoing</p>
+      </td>
+      <td style="text-align:left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>## OpenCPN NMEA I/F
 
 OpenCPN integrates GPS and plotter capabilities to provide user with all required means to define a route and send it to Fenix Autopilot. OpenCPN is required for Nav mode.
 
