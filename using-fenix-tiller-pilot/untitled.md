@@ -158,8 +158,8 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
       <td style="text-align:left">
         <p>2: &apos;I&apos; Save Installation and current Feedback Parameters</p>
         <p>2: &apos;G&apos; Save current PID Gain parameters</p>
-        <p>3: &apos;C&apos; Save current IMU Offsets</p>
-        <p>4: &apos;R&apos; Restore Inst.Param, Feedback and PID Gain to hardcoded
+        <p>2: &apos;C&apos; Save current IMU Offsets</p>
+        <p>2: &apos;R&apos; Restore Inst.Param, Feedback and PID Gain to hardcoded
           values</p>
       </td>
       <td style="text-align:left">
@@ -168,6 +168,13 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
         <p>$PEMC,11,C*58</p>
         <p>$PEMC,11,R*49</p>
       </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">12</td>
+      <td style="text-align:left">IMU Cal.Mode values</td>
+      <td style="text-align:left">Cal.Mode values</td>
+      <td style="text-align:left">$PEMC,12,</td>
     </tr>
   </tbody>
 </table>####  Additional Field: Change rate [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=9)
@@ -217,6 +224,24 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 | n+3 | Float | Course To Steer \(CTS\) - Magnitude \(M\) | N/A |
 | n+4 | Positive int | Deadband value | N/A |
 | n+5 | Float | Trimming value | N/A |
+
+#### Additional Field: IMU Cal. values [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=12)
+
+| Field | Value | Function | Additional Field |
+| :--- | :--- | :--- | :--- |
+| n | '-' | Calib. Not started | N/A |
+| n | 'O' | Calib. Ongoing | N/A |
+| n | 'R' | Recalibrated | N/A |
+| n | 'N' | Not calibrated | N/A |
+| n | 'C' | Check ongoing | N/A |
+| n+1 | 1:OK/ 0:NOK | Sys status | N/A |
+| n+2 | 1:OK/ 0:NOK | Gyro status | N/A |
+| n+3 | 1:OK/ 0:NOK | Accel status | N/A |
+| n+4 | 1:OK/ 0:NOK | Magn status | N/A |
+| n+1 | Int \(0, 360\) | X euler angle | N/A |
+| n+2 | Int \(-180, 180\) | Y euler angle | N/A |
+| n+3 | Int \(0, 90\) | Z euler angle | N/A |
+|  |  |  |  |
 
 ## OpenCPN NMEA I/F
 
