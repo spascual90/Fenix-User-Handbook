@@ -177,7 +177,9 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
       <td style="text-align:left">$PEMC,12,</td>
     </tr>
   </tbody>
-</table>####  Additional Field: Change rate [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=9)
+</table>
+
+####  Additional Field: Change rate [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=9)
 
 | Field | Value | Function | Additional Field |
 | :--- | :--- | :--- | :--- |
@@ -219,6 +221,7 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 | n | 'S' | STAND-BY Mode | N/A |
 | n | 'A' | AUTO Mode | N/A |
 | n | 'T' | TRACK Mode | N/A |
+| n | 'C' | Calibration Mode \(IMU or Feedback\) | N/A |
 | n+1 | Integer | Current Rudder | N/A |
 | n+2 | Float | Heading Magnetic \(HDM\) - Magnitude \(M\) | N/A |
 | n+3 | Float | Course To Steer \(CTS\) - Magnitude \(M\) | N/A |
@@ -331,7 +334,16 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>## OpenCPN NMEA I/F
+</table>
+
+#### Additional Field: IMU Cal. values [![](data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit&section=12)
+
+| Field | Value | Function | Additional Field |
+| :--- | :--- | :--- | :--- |
+| n | '-' | Calib. Not started | N/A |
+| n |  |  |  |
+
+## OpenCPN NMEA I/F
 
 OpenCPN integrates GPS and plotter capabilities to provide user with all required means to define a route and send it to Fenix Autopilot. OpenCPN is required for Nav mode.
 
