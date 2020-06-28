@@ -55,15 +55,15 @@ You can find below a Video tutorial by IMU BNO055 Manufacturer.
 
 ## Configuration of OpenPlotter
 
+![](../.gitbook/assets/usb.png)
+
 ![](../.gitbook/assets/nmea.png)
 
 ## Configuration of OpenCPN
 
-![](../.gitbook/assets/usb.png)
+![](../.gitbook/assets/opencpn_conn.png)
 
 ![](../.gitbook/assets/opencpn_tcp.png)
-
-![](../.gitbook/assets/opencpn_conn.png)
 
 ![](../.gitbook/assets/opencpn_udp.png)
 
