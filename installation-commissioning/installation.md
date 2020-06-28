@@ -53,3 +53,19 @@ You can find below a Video tutorial by IMU BNO055 Manufacturer.
 4. [Exit calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-linear-actuator-calibration)
 5. [Save linear actuator offsets](../using-fenix-tiller-pilot/user-functions.md#save-current-installation-parameters)
 
+## Configuration of OpenPlotter
+
+![](../.gitbook/assets/nmea.png)
+
+## Configuration of OpenCPN
+
+![](../.gitbook/assets/usb.png)
+
+![](../.gitbook/assets/opencpn_tcp.png)
+
+![](../.gitbook/assets/opencpn_conn.png)
+
+![](../.gitbook/assets/opencpn_udp.png)
+
+
+
