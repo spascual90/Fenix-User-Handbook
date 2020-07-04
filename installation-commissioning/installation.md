@@ -16,6 +16,10 @@ These activities shall be performed through Serial I/F and before installing Aut
 
 ### Compass calibration
 
+1. In Virtuino App, enter into Compass calibration screen and press Start Calibration button,
+
+![](../.gitbook/assets/compass-calib.jpg)
+
 1. [Enter into Compass calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-compass-calibration) using Serial I/F.
 2. To calibrate BNO055 IMU sensor follow the steps:
    1. Gyroscope Calibration: Place the device in a single stable position to allow the gyroscope to calibrate. Keep this position for a period of few seconds until GYRO register indicates fully calibrated.
@@ -46,6 +50,10 @@ You can find below a Video tutorial by IMU BNO055 Manufacturer.
 {% embed url="https://youtu.be/Bw0WuAyGsnY" %}
 
 ### Linear actuator calibration
+
+1. From Virtuino App, enter Linear actuator screen and press Start Calibration.
+
+![](../.gitbook/assets/linear-calib.jpg)
 
 1. [Enter into linear actuator calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-compass-calibration)
 2. [Extend linear actuator](../using-fenix-tiller-pilot/user-functions.md#increment-current-rudder-by-10-position-unit) by pressing +10 up to the complete extension of the linear actuator.
