@@ -9,7 +9,7 @@ This function allows user to change Autopilot working mode from Stand-by to Auto
 * Executed in Stand-by mode, Autopilot will switch to Auto mode.
 * Executed in Auto mode, Autopilot will switch to Stand-by mode.
 
-![Virtuino App: Press Execution button at Main page](../.gitbook/assets/screenshot-1584266653119.jpg)
+![](../.gitbook/assets/start_stop.jpg)
 
 > #### Serial I/F $PEMC Code: 00
 >
@@ -21,15 +21,17 @@ This function allows user to change Autopilot working mode from Stand-by to Auto
 
 ### Enter into Track mode
 
-#### Accept or Reject Autopilot action
+When Autopilot receives a track, displays a message and bearing angle to the next waypoint. In this situation, Track Mode is available.
 
-Some actions require use confirmation before execution.
+![](../.gitbook/assets/track-available.jpg)
+
+#### Start Track Mode
 
 In Virtuino App,
 
-* Press Execution button at Main page to Accept autopilot action
+* Press Next Course button at Main page to accept new CTS.
 
-![](../.gitbook/assets/screenshot-1584266653119.jpg)
+![](../.gitbook/assets/accept-track.jpg)
 
 ## Rudder control
 
@@ -59,7 +61,7 @@ In Virtuino App,
 
 * In Stand by mode, press +1 button at Main page
 
-![](../.gitbook/assets/screenshot-1584266646684.jpg)
+![](../.gitbook/assets/cts-plus-1.jpg)
 
 > Serial I/F Example: $PEMC,01,i\*xx
 
@@ -71,8 +73,6 @@ In Virtuino App,
 
 * In Stand by mode, press +10 button at Main page
 
-![Virtuino App: In Stand by mode, press +10 button at Main page](../.gitbook/assets/screenshot-1584266631637.jpg)
-
 > Serial I/F Example: $PEMC,01,I\*xx
 
 ### Reduce Current Rudder by 1 Position Unit.
@@ -83,8 +83,6 @@ In Virtuino App,
 
 * In Stand by mode, press -1 button at Main page
 
-![](../.gitbook/assets/screenshot-1584266641595.jpg)
-
 > Serial I/F Example: $PEMC,01,r\*xx
 
 ### Reduce Current Rudder by 10 Position Unit.
@@ -94,8 +92,6 @@ Perform a LONG RETRACTION of the linear actuator to increase current rudder angl
 In Virtuino App,
 
 * In Stand by mode, press -10 button at Main page
-
-![](../.gitbook/assets/screenshot-1584266602456.jpg)
 
 > Serial I/F Example: $PEMC,01,R\*xx
 
@@ -118,9 +114,6 @@ This function allows user to Increment CTS value in 1º
 In Virtuino App,
 
 * Auto or Track mode, press +1 button at Main page
-* Stand-by mode, press +1 button at CTS page
-
-![](../.gitbook/assets/screenshot-1584266816399.jpg)
 
 > Serial I/F Example: $PEMC,02,i\*xx
 
@@ -130,8 +123,21 @@ This function allows user to Increment CTS value in 10º
 
 In Virtuino App,
 
-* Auto or Track mode, press +10 button at Main page
-* Stand-by mode, press +10 button at CTS page
+* Auto or Track mode, 
+
+press +10 button at Main page
+
+![](../.gitbook/assets/dodging-1.png)
+
+* Stand-by, Auto or Track mode, 
+
+In Virtuino App press +10 button at CTS page.
+
+![](../.gitbook/assets/cts-plus-10.jpg)
+
+Then press Next Course button to accept new CTS.
+
+![](../.gitbook/assets/accept-cts.jpg)
 
 > Serial I/F Example: $PEMC,02,I\*xx
 
@@ -142,7 +148,7 @@ This function allows user to Reduce CTS value in 1º
 In Virtuino App,
 
 * Auto or Track mode, press -1 button at Main page
-* Stand-by mode, press -1 button at CTS page
+* Stand-by mode, press -1 button at CTS page. Press Next CTS button to Accept new CTS
 
 > Serial I/F Example: $PEMC,02,r\*xx
 
@@ -153,7 +159,7 @@ This function allows user to Reduce CTS value in 10º
 In Virtuino App,
 
 * Auto or Track mode, press -10 button at Main page
-* Stand-by mode, press -10 button at CTS page
+* Stand-by mode, press -10 button at CTS page. Press Next CTS button to Accept new CTS
 
 > Serial I/F Example: $PEMC,02,R\*xx
 
@@ -163,9 +169,13 @@ This function allows user to set CTS to a defined value.
 
 Virtuino App,
 
-* turn center wheel to point desired target CTS at CTS page
+* turn center wheel to point desired Target CTS at CTS page
 
-![](../.gitbook/assets/screenshot-1584266816399.jpg)
+![](../.gitbook/assets/cts-wheel.jpg)
+
+* Press Next CTS button to Accept new CTS
+
+![](../.gitbook/assets/accept-cts-2.jpg)
 
 ### Return to initial CTS
 
@@ -173,9 +183,9 @@ This function allows user to set CTS to `Initial CTS` value.
 
 Virtuino App,
 
-* press Target CTS button at Main page
+* press NEXT COURSE button at Main page
 
-![](../.gitbook/assets/screenshot-1584266673484.jpg)
+![](../.gitbook/assets/return-prev-cts.png)
 
 ## Autopilot monitoring
 
@@ -202,21 +212,24 @@ This function allows user to relinquish Autopilot current operational status.
 >
 > Serial I/F Sentence: $PEMC,08,A\*52
 
-Virtuino App V0.1 provides the following information at Main page,
+Virtuino App V1.0 provides the following information at Main page,
 
 * `Current Mode:` 
   * `Green light off: Stand-by (S)`
   * `Green light on: Auto (A) or Track (T)`
-* `Current Rudder Position`
+* `Rudder Position`
 * `HDG: Heading Magnetic (HDM)`
 * `Course To Steer (CTS) (Magnetic)`
+* `Next Course To Steer (CTS) (Magnetic)`
+* `Track Mode status`
+* `Information, Warning and Error messages`
 
-![Main page in Virtuino App](../.gitbook/assets/screenshot-1584266602456.jpg)
+![](../.gitbook/assets/out_course.png)
 
 ## Configuration control
 
 {% hint style="warning" %}
-Virtuino App provides limited funtionalities to manage autopilot configurations in Virtuino for Fenix App v0.1.
+Virtuino App provides limited funtionalities to manage autopilot configurations in Virtuino for Fenix App v1.0.
 {% endhint %}
 
 {% hint style="info" %}
@@ -248,11 +261,11 @@ This function allows user to relinquish Autopilot current installation parameter
 >
 > Serial I/F Sentence: $PEMC,08,I\*5A
 
-Virtuino App V0.1 provides the following information at Gain page,
+Virtuino App V1.0 provides the following information at Gain page,
 
-* `Centered Tiller Position`
+* `Deadband`
 
-![Gain page in Virtuino App](../.gitbook/assets/screenshot_20200215-114829.png)
+![](../.gitbook/assets/deadband.png)
 
 ### Set Installation Parameters
 
@@ -302,16 +315,17 @@ This function allows user to relinquish Autopilot current Autopilot Gain Paramet
 >
 > Serial I/F Sentence: $PEMC,08,G\*54
 
-Virtuino App V0.1 provides the following information at Gain page,
+Virtuino App V1.0 provides the following information at Gain page,
 
 * `Current weight of P, I, D factors in the overal PID output.` 
 * `Current Gain parameters: KP, KI, KD PID` 
-* `Error`
-* `PID Output`
-* `Deadband light: On if current Heading within deadband.` 
+* `Target rudder (PID error)`
+* `Deadband led: On if current Heading within deadband.` 
 * `Deadband value`
+* `Trim value`
+* `Rudder Center deviation`
 
-![Gain page in Virtuino App ](../.gitbook/assets/screenshot_20200215-114829.png)
+![](../.gitbook/assets/config-panel.jpg)
 
 ### Set Gain Parameters
 

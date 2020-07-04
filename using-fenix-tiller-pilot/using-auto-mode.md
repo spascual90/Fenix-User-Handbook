@@ -36,13 +36,11 @@ To avoid an obstacle when your boat is under autopilot control,
 
 > For example,
 
-![In Virtuino App, press +10 three times for a 30&#xB0;dodge to port.](../.gitbook/assets/screenshot-1584267226756.jpg)
-
-![In Virtuino App, New CTS is 54&#xBA;](../.gitbook/assets/screenshot-1584267241304.jpg)
+![In Virtuino App, press +10 button to increase CTS by 10&#xBA; ](../.gitbook/assets/dodging-1.png)
 
 When safely clear of the obstacle, you can either:
 
-* [x] reverse the previous course change \(for example, by pressing -10 three times\), or
+* [x] reverse the previous course change \(for example, by pressing -10 button to decreate CTS by 10º\), or
 * [x] return to the previous heading \(see below\)
 
 ### Returning to the previous heading
@@ -50,11 +48,13 @@ When safely clear of the obstacle, you can either:
 1. Use [Return to initial CTS](user-functions.md#return-to-initial-cts)
 2. CTS will change to initial value when Auto mode was selected.
 
-![In Virtuino App, press Return to initial CTS button](../.gitbook/assets/screenshot-1584267350950.jpg)
+![](../.gitbook/assets/return-prev-cts.png)
 
 ## Off course alarm
 
-The off course alarm sounds if the locked autopilot heading and the boat’s current heading differ by more than the value set in calibration  parameter `Off course alarm angle` \(see [Get Installation Parameters](user-functions.md#get-installation-parameters)\).
+The off course alarm sounds if the locked autopilot heading and the boat’s current heading differ by more than the value set in calibration  parameter `Off course alarm angle` \(see [Get Installation Parameters](user-functions.md#get-installation-parameters)\) for more than xx seconds. A Warning will be displayed in the Virtuino App.
+
+![](../.gitbook/assets/out_course.png)
 
 ### Cancelling the off course alarm
 
@@ -82,4 +82,10 @@ If you want to switch off the Auto Deadband feature:
 To switch back to Auto Deadband, 
 
 1. [Set new Autopilot gain](user-functions.md)  and change parameter  `Deadband Type` to Auto \(`A`\)
+
+Current Deadband value can be monitored in Virtuino App, Configuration pannel. Blue led is on when heading is within current deadband.
+
+![](../.gitbook/assets/deadband.png)
+
+
 
