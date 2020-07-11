@@ -107,6 +107,34 @@ If executed in Stand-by mode, Target CTS will be changed and will only take effe
 >
 > Serial I/F Sentence example: $PEMC,02,i\*70
 
+### 
+
+
+
+### Tacking Starboard
+
+This function allows user to turn 100º to starboard, which is the standard value for tacking.
+
+In Virtuino App,
+
+* Stand-by, Auto or Track mode, 
+
+In Virtuino App press Tack-Starboard button at CTS page.
+
+Then press Next Course button to accept new CTS.
+
+### Tacking Portboard
+
+This function allows user to turn 100º to portboard, which is the standard value for tacking.
+
+In Virtuino App,
+
+* Stand-by, Auto or Track mode, 
+
+In Virtuino App press Tack-Portboard button at CTS page.
+
+Then press Next Course button to accept new CTS.
+
 ### Increment CTS by 1º
 
 This function allows user to Increment CTS value in 1º
