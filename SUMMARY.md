@@ -10,6 +10,7 @@
 
 * [Overview](using-fenix-tiller-pilot/overview.md)
 * [Using Auto Mode](using-fenix-tiller-pilot/using-auto-mode.md)
+* [Using Track Mode](using-fenix-tiller-pilot/using-track-mode.md)
 * [User functions](using-fenix-tiller-pilot/user-functions.md)
 * [Serial Interface](using-fenix-tiller-pilot/untitled.md)
 

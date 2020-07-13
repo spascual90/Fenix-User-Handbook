@@ -15,24 +15,6 @@ This function allows user to change Autopilot working mode from Stand-by to Auto
 >
 > Serial I/F Sentence: $PEMC,00\*37
 
-{% hint style="info" %}
-`Initial CTS` value will be set to Heading value. This is useful for later execution of [Return to initial CTS](user-functions.md#return-to-initial-cts) function.
-{% endhint %}
-
-### Enter into Track mode
-
-When Autopilot receives a track, displays a message and bearing angle to the next waypoint. In this situation, Track Mode is available.
-
-![](../.gitbook/assets/track-available.jpg)
-
-#### Start Track Mode
-
-In Virtuino App,
-
-* Press Next Course button at Main page to accept new CTS.
-
-![](../.gitbook/assets/accept-track.jpg)
-
 ## Rudder control
 
 This set of functions allows user to change rudder angle.
@@ -97,19 +79,11 @@ In Virtuino App,
 
 ## Control Course to Steer
 
-This set of functions allows user to change CTS angle.
-
-{% hint style="info" %}
-If executed in Stand-by mode, Target CTS will be changed and will only take effect once autopilot is in Auto mode.
-{% endhint %}
+This set of functions allows user to change Target CTS angle.
 
 > #### Serial I/F $PEMC Code: 02
 >
 > Serial I/F Sentence example: $PEMC,02,i\*70
-
-### 
-
-
 
 ### Tacking Starboard
 
@@ -193,7 +167,7 @@ In Virtuino App,
 
 ### Set CTS
 
-This function allows user to set CTS to a defined value.
+This function allows user to set Next CTS to a defined value.
 
 Virtuino App,
 
@@ -201,19 +175,36 @@ Virtuino App,
 
 ![](../.gitbook/assets/cts-wheel.jpg)
 
-* Press Next CTS button to Accept new CTS
+### Activate Next Course to Steer
 
-![](../.gitbook/assets/accept-cts-2.jpg)
+This function allows user to activate Target CTS. 
 
-### Return to initial CTS
+#### Activate Target CTS
 
-This function allows user to set CTS to `Initial CTS` value.
+Virtuino App in Main panel,
 
-Virtuino App,
-
+* in Auto mode,
 * press NEXT COURSE button at Main page
 
 ![](../.gitbook/assets/return-prev-cts.png)
+
+Virtuino App,
+
+* in CTS panel,
+* Press Next CTS button to Accept Next CTS
+* In Stand by mode, Auto mode will be activated.
+
+![](../.gitbook/assets/accept-cts-2.jpg)
+
+#### Start Track Mode
+
+In Virtuino App,
+
+* When Track is available,
+* Press Next Course button at Main page to accept new CTS.
+* Autopilot will enter into Track mode.
+
+![](../.gitbook/assets/accept-track.jpg)
 
 ## Autopilot monitoring
 
