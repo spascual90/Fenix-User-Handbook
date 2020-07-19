@@ -286,7 +286,12 @@ This function allows user to set current heading.
 
 In Virtuino App,
 
+* Using an external compass as a valid referece, Set Next Course to current Heading value.
+* In CTS panel, press Set Heading button.
+
 ![](../.gitbook/assets/heading.jpg)
+
+Autopilot will update `Heading Alignment` value to the Next Course value.
 
 ![](../.gitbook/assets/heading_after.jpg)
 
