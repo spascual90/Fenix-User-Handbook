@@ -117,48 +117,41 @@ In Virtuino App,
 
 Next CTS will be updated, pending user confirmation. Follow same procedure for Tacking Starboard.
 
-### Increment CTS by 1º
-
-This function allows user to Increment CTS value in 1º
-
-In Virtuino App,
-
-* Auto or Track mode, press +1 button at Main page
-
-> Serial I/F Example: $PEMC,02,i\*xx
-
 ### Increment CTS by 10º
 
 This function allows user to Increment CTS value in 10º
 
-In Virtuino App,
+In Virtuino App at Main panel,
 
-* Auto or Track mode, 
-
-press +10 button at Main page
+* In Auto or Track mode,  
+* press +10 button
 
 ![](../.gitbook/assets/dodging-1.png)
 
-* Stand-by, Auto or Track mode, 
+In Virtuino App at CTS panel,
 
-In Virtuino App press +10 button at CTS page.
+* press +10 button
 
 ![](../.gitbook/assets/cts-plus-10.jpg)
 
-Then press Next Course button to accept new CTS.
-
-![](../.gitbook/assets/accept-cts.jpg)
+* Next CTS will be updated, pending user confirmation.
+* [Activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)
 
 > Serial I/F Example: $PEMC,02,I\*xx
+
+### Increment CTS by 1º
+
+This function allows user to Increment CTS value in 1º
+
+In Virtuino App, follow steps described previously
+
+> Serial I/F Example: $PEMC,02,i\*xx
 
 ### Reduce CTS by 1º
 
 This function allows user to Reduce CTS value in 1º
 
-In Virtuino App,
-
-* Auto or Track mode, press -1 button at Main page
-* Stand-by mode, press -1 button at CTS page. Press Next CTS button to Accept new CTS
+In Virtuino App,In Virtuino App, follow steps described previously
 
 > Serial I/F Example: $PEMC,02,r\*xx
 
@@ -166,40 +159,41 @@ In Virtuino App,
 
 This function allows user to Reduce CTS value in 10º
 
-In Virtuino App,
-
-* Auto or Track mode, press -10 button at Main page
-* Stand-by mode, press -10 button at CTS page. Press Next CTS button to Accept new CTS
+In Virtuino App, In Virtuino App, follow steps described previously
 
 > Serial I/F Example: $PEMC,02,R\*xx
 
-### Set CTS
+### Set Next Course To Steer \(CTS\)
 
 This function allows user to set Next CTS to a defined value.
 
 Virtuino App,
 
-* turn center wheel to point desired Target CTS at CTS page
+* turn center wheel to point desired Target CTS at CTS panel
 
 ![](../.gitbook/assets/cts-wheel.jpg)
 
-### Activate Next Course to Steer
+![](../.gitbook/assets/accept-cts-2.jpg)
 
-This function allows user to activate Target CTS. 
+* Next CTS will be updated, pending user confirmation.
+* [Activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)
 
-#### Activate Target CTS
+### Activate Next Course to Steer \(CTS\)
+
+This function allows user to activate Next CTS. 
+
+#### Activate Next CTS
 
 Virtuino App in Main panel,
 
 * in Auto mode,
-* press NEXT COURSE button at Main page
+* press NEXT COURSE button and CTS will be set to Next CTS value
 
 ![](../.gitbook/assets/return-prev-cts.png)
 
-Virtuino App,
+Virtuino App in CTS panel,
 
-* in CTS panel,
-* Press Next CTS button to Accept Next CTS
+* Press Next CTS button and CTS will be set to Next CTS value
 * In Stand by mode, Auto mode will be activated.
 
 ![](../.gitbook/assets/accept-cts-2.jpg)
@@ -208,7 +202,7 @@ Virtuino App,
 
 In Virtuino App,
 
-* When Track is available,
+* When Track is available, TRACK AVAILABLE message is displayed,
 * Press Next Course button at Main page to accept new CTS.
 * Autopilot will enter into Track mode.
 
@@ -273,7 +267,7 @@ Installation Parameters are,
 
 * `Centered Tiller Position`
 * `Maximum rudder angle`
-* `Average Cruise Speed`
+* `Average Cruise Speed (Not used)`
 * `Installation Side: Starboard (S) or Portboard (P)`
 * `Rudder Damping`
 * `Magnetic Variation`
@@ -286,12 +280,12 @@ This function allows user to set current heading.
 
 In Virtuino App,
 
-* Using an external compass as a valid referece, Set Next Course to current Heading value.
+* Set Next Course to current Heading value.
 * In CTS panel, press Set Heading button.
 
 ![](../.gitbook/assets/heading.jpg)
 
-Autopilot will update `Heading Alignment` value to the Next Course value.
+Autopilot will set`Heading Alignment` to Next Course value.
 
 ![](../.gitbook/assets/heading_after.jpg)
 

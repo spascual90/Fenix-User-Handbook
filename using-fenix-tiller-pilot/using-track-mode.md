@@ -15,7 +15,7 @@ When Autopilot receives a track, displays TRACK AVAILABLE message and Next CTS p
 
 In Virtuino App,
 
-* Press Next Course button at Main page to accept new CTS.
+* Press Next Course button at Main page to accept Next CTS.
 
 ![](../.gitbook/assets/accept-track.jpg)
 
