@@ -4,10 +4,10 @@
 
 ### Switch working mode from STAND BY to AUTO
 
-This function allows user to change Autopilot working mode from Stand-by to Auto alternatively.
+This function allows user to change Autopilot working mode from Stand-by to Auto or to disactivate Autopilot from any working mode:
 
 * Executed in Stand-by mode, Autopilot will switch to Auto mode.
-* Executed in Auto mode, Autopilot will switch to Stand-by mode.
+* Executed in Auto or Track mode, Autopilot will switch to Stand-by mode.
 
 ![](../.gitbook/assets/start_stop.jpg)
 
@@ -91,11 +91,19 @@ This function allows user to turn 100º to starboard, which is the standard valu
 
 In Virtuino App,
 
-* Stand-by, Auto or Track mode, 
+* Press Tack-Starboard button at CTS page.
 
-In Virtuino App press Tack-Starboard button at CTS page.
+![](../.gitbook/assets/screenshot-1595152463012.jpg)
 
-Then press Next Course button to accept new CTS.
+Next CTS will be updated, pending user confirmation.
+
+![](../.gitbook/assets/screenshot-1595152534259.jpg)
+
+
+
+* To start turn, press Next Course button.
+
+![](../.gitbook/assets/screenshot-1595152547567.jpg)
 
 ### Tacking Portboard
 
@@ -103,11 +111,11 @@ This function allows user to turn 100º to portboard, which is the standard valu
 
 In Virtuino App,
 
-* Stand-by, Auto or Track mode, 
+* Press Tack-Portboard button at CTS page.
 
-In Virtuino App press Tack-Portboard button at CTS page.
+![](../.gitbook/assets/screenshot-1595152476417.jpg)
 
-Then press Next Course button to accept new CTS.
+Next CTS will be updated, pending user confirmation. Follow same procedure for Tacking Starboard.
 
 ### Increment CTS by 1º
 
@@ -271,6 +279,16 @@ Installation Parameters are,
 * `Magnetic Variation`
 * `Heading Alignment`
 * `Off course alarm angle`
+
+### Set Heading Alignment
+
+This function allows user to set current heading.
+
+In Virtuino App,
+
+![](../.gitbook/assets/heading.jpg)
+
+![](../.gitbook/assets/heading_after.jpg)
 
 ### Get Installation Parameters
 
