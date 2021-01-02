@@ -28,7 +28,7 @@ Behaviour will be different depenting on the value of installation parameter`Ins
 {% endhint %}
 
 {% hint style="warning" %}
-In Fenix V0.1, the value of installation parameter`Installation Side` is always startboard \(`S`\)
+In Fenix V2.0, the value of installation parameter`Installation Side` is always startboard \(`S`\)
 {% endhint %}
 
 > #### Serial I/F $PEMC Code: 01
@@ -91,17 +91,17 @@ This function allows user to turn 100º to starboard, which is the standard valu
 
 In Virtuino App,
 
-* Press Tack-Starboard button at CTS page.
+* In Auto mode, press Tack-Starboard button at CTS page.
 
 ![](../.gitbook/assets/screenshot-1595152463012.jpg)
 
-Next CTS will be updated, pending user confirmation.
+Next CTS value will be updated, pending user confirmation.
 
 ![](../.gitbook/assets/screenshot-1595152534259.jpg)
 
 
 
-* To start turn, press Next Course button.
+* To start the turn, [activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)pressing SET CTS button.
 
 ![](../.gitbook/assets/screenshot-1595152547567.jpg)
 
@@ -111,11 +111,12 @@ This function allows user to turn 100º to portboard, which is the standard valu
 
 In Virtuino App,
 
-* Press Tack-Portboard button at CTS page.
+* In Auto mode, press Tack-Portboard button at CTS page.
 
 ![](../.gitbook/assets/screenshot-1595152476417.jpg)
 
-Next CTS will be updated, pending user confirmation. Follow same procedure for Tacking Starboard.
+* Next CTS value will be updated, pending user confirmation.
+* To start the turn, [activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)pressing SET CTS button.
 
 ### Increment CTS by 10º
 
@@ -123,19 +124,11 @@ This function allows user to Increment CTS value in 10º
 
 In Virtuino App at Main panel,
 
-* In Auto or Track mode,  
-* press +10 button
+* In Auto mode,  press +10 button
 
 ![](../.gitbook/assets/dodging-1.png)
 
-In Virtuino App at CTS panel,
-
-* press +10 button
-
-![](../.gitbook/assets/cts-plus-10.jpg)
-
-* Next CTS will be updated, pending user confirmation.
-* [Activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)
+ 
 
 > Serial I/F Example: $PEMC,02,I\*xx
 
@@ -176,25 +169,26 @@ Virtuino App,
 ![](../.gitbook/assets/accept-cts-2.jpg)
 
 * Next CTS will be updated, pending user confirmation.
-* [Activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)
+* To [activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)press SET CTS button.
 
 ### Activate Next Course to Steer \(CTS\)
 
-This function allows user to activate Next CTS. 
+This function allows user to change CTS value to Next CTS. 
 
 #### Activate Next CTS
 
 Virtuino App in Main panel,
 
 * in Auto mode,
-* press NEXT COURSE button and CTS will be set to Next CTS value
+* press SET button. CTS value will be set to NEXT CTS value.
 
 ![](../.gitbook/assets/return-prev-cts.png)
 
 Virtuino App in CTS panel,
 
-* Press Next CTS button and CTS will be set to Next CTS value
-* In Stand by mode, Auto mode will be activated.
+* In Auto mode,
+
+  Press SET CTS button and CTS value will be set to NEXT CTS value
 
 ![](../.gitbook/assets/accept-cts-2.jpg)
 
@@ -203,7 +197,7 @@ Virtuino App in CTS panel,
 In Virtuino App,
 
 * When Track is available, TRACK AVAILABLE message is displayed,
-* Press Next Course button at Main page to accept new CTS.
+* Press TRACK AVAILABLE button at Main page.
 * Autopilot will enter into Track mode.
 
 ![](../.gitbook/assets/accept-track.jpg)
@@ -217,13 +211,6 @@ Autopilot operational status is defined by the following set of parameters,
 * `Heading Magnetic (HDM)`
 * `Course To Steer (CTS) (Magnetic)`
 * `Deadband value`
-* `Trimm`
-
-{% hint style="warning" %}
-`Fenix V0.1 limitations:`
-
-`Trimm` is not used.
-{% endhint %}
 
 ### Get Autopilot information
 
@@ -249,8 +236,8 @@ Virtuino App V1.0 provides the following information at Main page,
 
 ## Configuration control
 
-{% hint style="warning" %}
-Virtuino App provides limited funtionalities to manage autopilot configurations in Virtuino for Fenix App v1.0.
+{% hint style="info" %}
+Virtuino App provides minimum funtionalities to manage autopilot configurations for Fenix App v2.0.
 {% endhint %}
 
 {% hint style="info" %}
@@ -276,18 +263,27 @@ Installation Parameters are,
 
 ### Set Heading Alignment
 
-This function allows user to set current heading.
+This function allows user to adjust Autopilot compass HDG value to current boat heading.
 
 In Virtuino App,
 
-* Set Next Course to current Heading value.
-* In CTS panel, press Set Heading button.
+* In Stand by mode,
+* Take a reference of current boat Heading with an external compass.
+* In CTS panel, 
+* Set NEXT CTS to boat Heading value.
+* press SET HDG button.
 
 ![](../.gitbook/assets/heading.jpg)
 
-Autopilot will set`Heading Alignment` to Next Course value.
+Autopilot will set`Heading Alignment` to NEXT CTS value.
 
 ![](../.gitbook/assets/heading_after.jpg)
+
+### 
+
+{% hint style="warning" %}
+Virtuino App will not save this value. Save Installation Parameters to retain the Heading Alignment value.
+{% endhint %}
 
 ### Get Installation Parameters
 
@@ -316,7 +312,7 @@ Remember to save values for later use
 {% endhint %}
 
 {% hint style="warning" %}
-Fenix V0.1 limitations: 
+Fenix V2.0 limitations: 
 
 `Installation Side` cannot be changed. Always set to Starboard \(`S`\).
 
@@ -397,7 +393,7 @@ This function allows user to enter into IMU calibration mode.
 
 ### Save compass offsets
 
-This function allows user to save current IMU Calibration Off-sets in the non-volatile memory for later use. 
+This function allows user to save current IMU Calibration Off-sets for later use. 
 
 Once the compass is calibrated and values saved, the calibration profile will be reused to get the correct orientation data inmediately after Power-on Autopilot.
 

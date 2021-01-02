@@ -24,9 +24,12 @@ For example: press -10 three times for a 30° course change to port:
 
 ## Automatic tack feature \(AutoTack\)
 
-{% hint style="warning" %}
-Feature not available in v.0.1
-{% endhint %}
+This function will perform a turn of 100º to either starboard or portboard.
+
+In Auto mode,
+
+1. Select tack side: starboard or porboard. Next CTS will display target course.
+2. Once you are prepared to start the turn, press SET CTS.
 
 ## Dodging obstacles
 

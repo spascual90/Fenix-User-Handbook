@@ -6,8 +6,10 @@ description: User's handbook
 
 ## Applicability
 
-* Fenix autopilot V1.0-beta.1
-* Virtuino App V1.0-beta.1
+* Fenix autopilot V2.0-beta.1
+* Virtuino App V2.0-beta.1
 
 ## License
+
+ [GPL-3.0 License](https://github.com/spascual90/Fenix/blob/master/LICENSE)
 
