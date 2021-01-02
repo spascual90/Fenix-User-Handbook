@@ -2,7 +2,7 @@
 description: User's handbook
 ---
 
-# Fenix Tiller Pilot
+# Fenix Autopilot
 
 ## Applicability
 

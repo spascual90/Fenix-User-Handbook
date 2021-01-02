@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Fenix Tiller Pilot](README.md)
+* [Fenix Autopilot](README.md)
 
 ## Introduction
 
