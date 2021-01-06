@@ -9,7 +9,18 @@ This function allows user to change Autopilot working mode from Stand-by to Auto
 * Executed in Stand-by mode, Autopilot will switch to Auto mode.
 * Executed in Auto or Track mode, Autopilot will switch to Stand-by mode.
 
-![](../.gitbook/assets/start_stop.jpg)
+In Virtuino App,
+
+* In Stand-by mode, press the Start/ Stop button at Main Page. Autopilot will enter into Auto mode.
+
+![](../.gitbook/assets/screenshot_20210106-204359_virtuino-1-.jpg)
+
+* Autopilot will fix the course to steer \(CTS\) to current heading \(HDG\) value and Status Led will turn on.
+* Autopilot will start moving the linear actuator to keep the boat course to CTS value.
+
+![](../.gitbook/assets/screenshot_20210106-205145_virtuino-1-.jpg)
+
+* In Auto mode, press Start/ Stop button again to switch back to Stand-by mode. Autopilot will stop moving linear actuator.
 
 > #### Serial I/F $PEMC Code: 00
 >
@@ -87,7 +98,7 @@ This set of functions allows user to change Target CTS angle.
 
 ### Tacking Starboard
 
-This function allows user to turn 100º to starboard, which is the standard value for tacking.
+This function allows user to select a 100º turn to starboard, which is the standard value for tacking. This turn requires a second user confirmation to avoid big turns are performed by mistake.
 
 In Virtuino App,
 
