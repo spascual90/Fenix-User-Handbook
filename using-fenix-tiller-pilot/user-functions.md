@@ -54,7 +54,7 @@ In Virtuino App,
 
 * In Stand by mode, press +1 button at Main page
 
-![](../.gitbook/assets/cts-plus-1.jpg)
+![](../.gitbook/assets/screenshot_20210107-174513_virtuino-1-.jpg)
 
 > Serial I/F Example: $PEMC,01,i\*xx
 
@@ -102,19 +102,19 @@ This function allows user to select a 100º turn to starboard, which is the stan
 
 In Virtuino App,
 
-* In Auto mode, press Tack-Starboard button at CTS page.
+* In Auto mode,
 
-![](../.gitbook/assets/screenshot-1595152463012.jpg)
+![](../.gitbook/assets/screenshot_20210109-191725_virtuino.jpg)
 
-Next CTS value will be updated, pending user confirmation.
+*  press Tack-Starboard button at CTS page. Next CTS value will be updated, pending user confirmation.
 
-![](../.gitbook/assets/screenshot-1595152534259.jpg)
+![](../.gitbook/assets/screenshot_20210109-191734_virtuino.jpg)
 
 
 
 * To start the turn, [activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)pressing SET CTS button.
 
-![](../.gitbook/assets/screenshot-1595152547567.jpg)
+![](../.gitbook/assets/screenshot_20210109-191746_virtuino.jpg)
 
 ### Tacking Portboard
 
@@ -123,9 +123,6 @@ This function allows user to turn 100º to portboard, which is the standard valu
 In Virtuino App,
 
 * In Auto mode, press Tack-Portboard button at CTS page.
-
-![](../.gitbook/assets/screenshot-1595152476417.jpg)
-
 * Next CTS value will be updated, pending user confirmation.
 * To start the turn, [activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)pressing SET CTS button.
 
@@ -135,9 +132,13 @@ This function allows user to Increment CTS value in 10º
 
 In Virtuino App at Main panel,
 
-* In Auto mode,  press +10 button
+* In Auto mode,  
 
-![](../.gitbook/assets/dodging-1.png)
+![](../.gitbook/assets/screenshot_20210109-192951_virtuino.jpg)
+
+* press +10 button. CTS will be increased by 10.
+
+![](../.gitbook/assets/screenshot_20210109-192958_virtuino.jpg)
 
  
 
@@ -171,16 +172,24 @@ In Virtuino App, In Virtuino App, follow steps described previously
 
 This function allows user to set Next CTS to a defined value.
 
-Virtuino App,
+In Virtuino App,
 
-* turn center wheel to point desired Target CTS at CTS panel
+* In Auto Mode at CTS panel,
 
-![](../.gitbook/assets/cts-wheel.jpg)
+![](../.gitbook/assets/screenshot_20210109-195127_virtuino.jpg)
 
-![](../.gitbook/assets/accept-cts-2.jpg)
+* turn center wheel to point desired Target CTS
 
-* Next CTS will be updated, pending user confirmation.
+![](../.gitbook/assets/screenshot_20210109-194954_virtuino.jpg)
+
+* When center wheel is released, Next CTS will be fixed, pending user confirmation.
 * To [activate Next CTS ](user-functions.md#activate-next-course-to-steer-cts)press SET CTS button.
+
+![](../.gitbook/assets/screenshot_20210109-195141_virtuino.jpg)
+
+
+
+![](../.gitbook/assets/screenshot_20210109-195433_virtuino.jpg)
 
 ### Activate Next Course to Steer \(CTS\)
 
@@ -188,20 +197,27 @@ This function allows user to change CTS value to Next CTS.
 
 #### Activate Next CTS
 
-Virtuino App in Main panel,
+In Virtuino App,
 
-* in Auto mode,
+* at Main panel, in Auto mode 
+
+![](../.gitbook/assets/screenshot_20210109-202133_virtuino.jpg)
+
 * press SET button. CTS value will be set to NEXT CTS value.
 
-![](../.gitbook/assets/return-prev-cts.png)
+![](../.gitbook/assets/screenshot_20210109-202141_virtuino.jpg)
 
-Virtuino App in CTS panel,
+![](../.gitbook/assets/screenshot_20210109-202150_virtuino.jpg)
 
-* In Auto mode,
+Alternative, at CTS panel in Auto mode,
 
-  Press SET CTS button and CTS value will be set to NEXT CTS value
+![](../.gitbook/assets/screenshot_20210109-202236_virtuino.jpg)
 
-![](../.gitbook/assets/accept-cts-2.jpg)
+* Press SET CTS button and CTS value will be set to NEXT CTS value
+
+![](../.gitbook/assets/screenshot_20210109-202242_virtuino.jpg)
+
+![](../.gitbook/assets/screenshot_20210109-202249_virtuino.jpg)
 
 #### Start Track Mode
 
@@ -279,18 +295,22 @@ This function allows user to adjust Autopilot compass HDG value to current boat 
 In Virtuino App,
 
 * In Stand by mode,
+
+![](../.gitbook/assets/screenshot_20210109-204008_virtuino.jpg)
+
 * Take a reference of current boat Heading with an external compass.
 * In CTS panel, 
-* Set NEXT CTS to boat Heading value.
+* Set NEXT CTS to referenced boat Heading value.
+
+![](../.gitbook/assets/screenshot_20210109-204031_virtuino.jpg)
+
 * press SET HDG button.
 
-![](../.gitbook/assets/heading.jpg)
+![](../.gitbook/assets/screenshot_20210109-204048_virtuino.jpg)
 
 Autopilot will set`Heading Alignment` to NEXT CTS value.
 
-![](../.gitbook/assets/heading_after.jpg)
-
-### 
+![](../.gitbook/assets/screenshot_20210109-204057_virtuino.jpg)
 
 {% hint style="warning" %}
 Virtuino App will not save this value. Save Installation Parameters to retain the Heading Alignment value.
@@ -400,15 +420,44 @@ These functions are only available in Stand-by mode
 
 ### Start compass calibration
 
-This function allows user to enter into IMU calibration mode.
+This function allows user to calibrate the internal compass \(IMU\).
 
-### Save compass offsets
+* In Virtuino App, Stand-by mode,
+* Access to Compass Calibration through Configuration panel,
 
-This function allows user to save current IMU Calibration Off-sets for later use. 
+![](../.gitbook/assets/screenshot_20210109-205045_virtuino%20%281%29.jpg)
 
+![](../.gitbook/assets/screenshot_20210109-205059_virtuino.jpg)
+
+* Press Start Button to launch the calibration process,
+
+![](../.gitbook/assets/screenshot_20210109-205106_virtuino.jpg)
+
+* Along calibration, the status of the different sensors will be displayed. Status 3 will represent a sensor fully calibrated.
+
+![](../.gitbook/assets/screenshot_20210109-205114_virtuino.jpg)
+
+Follow the calibration procedure described in the screen until all sensors are fully calibrated \(All green\).
+
+![](../.gitbook/assets/screenshot_20210109-205217_virtuino.jpg)
+
+You will have additional time to check X, Y, Z axes and bearing values. Once the time has expired, Save and Exit Buttons will be enabled again.
+
+* Press Save Button.
+
+{% hint style="success" %}
 Once the compass is calibrated and values saved, the calibration profile will be reused to get the correct orientation data inmediately after Power-on Autopilot.
 
-> **Serial I/F $PEMC Code: 11**
+If you are satified with the result of the calibration process, press Save Button to be used by the autopilot every time it is powered on.
+{% endhint %}
+
+> **Serial I/F $PEMC Code:** 
+>
+> **09 \(Start IMU Calibration Mode\)**
+>
+> > Serial I/F Sentence: $PEMC,09\*3E
+
+> **11 \(Save IMU Calibration Values\)**
 >
 > Serial I/F Sentence: $PEMC,11,I\*52
 
@@ -416,13 +465,30 @@ Once the compass is calibrated and values saved, the calibration profile will be
 
 This function allows user to enter/ exit linear actuator calibration mode.
 
+In Virtuino App, Stand-by mode,
+
+* From Configuation Panel enter into Linear Actuator Calibration Panel,
+
+![](../.gitbook/assets/screenshot_20210109-205045_virtuino.jpg)
+
+![](../.gitbook/assets/screenshot_20210109-214510_virtuino.jpg)
+
+* Press Start Button to launch the calibration process,
+
+![](../.gitbook/assets/screenshot_20210109-214517_virtuino.jpg)
+
+* Press Extend Button to extend the linear actuator as many times as required until the extension is complete.
+* Press Retract Button to retract the linear actuator as many times as required until the retraction is complete.
+
+![](../.gitbook/assets/screenshot_20210109-214559_virtuino.jpg)
+
+{% hint style="success" %}
+Press the Save Button to save linear actuator off-sets for later use
+{% endhint %}
+
 > **Serial I/F $PEMC Code: 10**
 >
 > Serial I/F Sentence: $PEMC,10\*36
-
-{% hint style="info" %}
-Remember to save linear actuator off-sets for later use
-{% endhint %}
 
 
 
