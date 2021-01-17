@@ -21,7 +21,7 @@
 ## Installation & Commissioning <a id="installation-commissioning"></a>
 
 * [Installation](installation-commissioning/installation.md)
-* [Commissioning](installation-commissioning/untitled.md)
+* [Commissioning](installation-commissioning/commissioning.md)
 
 ## CONFIGURATION SETTINGS
 
