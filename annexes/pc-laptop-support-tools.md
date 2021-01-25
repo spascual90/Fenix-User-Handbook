@@ -38,11 +38,21 @@ PuTTY is a free \(MIT-licensed\) Windows Telnet client to communicate with Fenix
 It is recommended to Save Session to ease recovery of settings at the begining of each session.
 {% endhint %}
 
+## How to save the Serial I/F backlog
+
+Move the cursor to the upper-left corner of PuTTY and left-click.
+
+Select "Copy All to Clipboard".
+
+![](../.gitbook/assets/sending-serial.png)
+
+Open Notepad and paste the Clipboard to a txt file.
+
 ## Autopilot SW Uploader
 
 Microsoft Windows Tool for flashing Fenix SW \(HEX file\) to  Fenix autopilot \(Arduino\). 
 
-{% embed url="https://github.com/xinabox/xLoader/releases/download/v1.339/xLoader\_V1\_339.zip" %}
+{% file src="../.gitbook/assets/xloader-v1.00-1-.zip" caption="xloader-v1.00 Tool for flashing Fenix SW \(HEX file\)" %}
 
 ### Configuration Parameters in XLoader
 
@@ -54,6 +64,8 @@ Microsoft Windows Tool for flashing Fenix SW \(HEX file\) to  Fenix autopilot \(
 {% hint style="info" %}
 \# is the COM port number where Autopilot is connected. If you don't know the value, try numbers sequencialy starting from 1.
 {% endhint %}
+
+### 
 
 ### Flashing Steps
 
