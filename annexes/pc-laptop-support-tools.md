@@ -4,7 +4,7 @@
 
 PuTTY is a free \(MIT-licensed\) Windows Telnet client to communicate with Fenix Autopilot.
 
-{% embed url="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" %}
+{% file src="../.gitbook/assets/putty.zip" caption="Download PuTTY: latest release \(0.74\)" %}
 
 ### Configuration parameters in Putty
 
@@ -52,7 +52,7 @@ Open Notepad and paste the Clipboard to a txt file.
 
 Microsoft Windows Tool for flashing Fenix SW \(HEX file\) to  Fenix autopilot \(Arduino\). 
 
-{% file src="../.gitbook/assets/xloader-v1.00-1-.zip" caption="xloader-v1.00 Tool for flashing Fenix SW \(HEX file\)" %}
+{% file src="../.gitbook/assets/xloader-v1.00-1-.zip" caption="Download xloader-v1.00 Tool for flashing Fenix SW \(HEX file\)" %}
 
 ### Configuration Parameters in XLoader
 
