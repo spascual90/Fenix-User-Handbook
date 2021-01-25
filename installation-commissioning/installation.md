@@ -20,7 +20,7 @@ These activities shall be performed through Serial I/F and before installing Aut
 
 ![](../.gitbook/assets/compass-calib.jpg)
 
-1. [Enter into Compass calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-compass-calibration) using Serial I/F.
+1. From Virtuino App, enter into Compass calibration mode.
 2. To calibrate BNO055 IMU sensor follow the steps:
    1. Gyroscope Calibration: Place the device in a single stable position to allow the gyroscope to calibrate. Keep this position for a period of few seconds until GYRO register indicates fully calibrated.
    2. Accelerometer Calibration: Place the device in 6 different stable positions for a period of few seconds to allow the accelerometer to calibrate. Repeat until 
@@ -30,8 +30,8 @@ These activities shall be performed through Serial I/F and before installing Aut
 
 Calibration Verification result,
 
-* [x] Calibration OK: [save Compass calibration](../using-fenix-tiller-pilot/user-functions.md#save-compass-offsets) values
-* [ ] Calibration KO: repeat Compass calibration process
+* [x] Calibration OK: Press "Save" button to store Compass calibration values for later use.
+* [ ] Calibration KO: repeat Compass calibration process.
 
 Once the compass is calibrated and values saved, the calibration profile will be reused to get the correct orientation data immediately after Power-on Autopilot.
 
@@ -55,11 +55,10 @@ You can find below a Video tutorial by IMU BNO055 Manufacturer.
 
 ![](../.gitbook/assets/linear-calib.jpg)
 
-1. [Enter into linear actuator calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-compass-calibration)
-2. [Extend linear actuator](../using-fenix-tiller-pilot/user-functions.md#increment-current-rudder-by-10-position-unit) by pressing +10 up to the complete extension of the linear actuator.
-3. [Retract linear actuator](../using-fenix-tiller-pilot/user-functions.md#reduce-current-rudder-by-10-position-unit) by pressing -10 up to the complete retraction of the linear actuator.
-4. [Exit calibration mode](../using-fenix-tiller-pilot/user-functions.md#start-linear-actuator-calibration)
-5. [Save linear actuator offsets](../using-fenix-tiller-pilot/user-functions.md#save-current-installation-parameters)
+1. Press "Right Arrow" button extend linear actuator up to the complete extension of the linear actuator.
+2. Press "Left Arrow" button to retract linear actuator up to the complete retraction of the linear actuator.
+3. Press "Save" button to save linear actuator offsets
+4. Exit calibration screen pressing "Tick" button.
 
 ## Configuration of OpenPlotter
 
