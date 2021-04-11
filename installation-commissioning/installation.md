@@ -62,17 +62,58 @@ You can find below a Video tutorial by IMU BNO055 Manufacturer.
 
 ## Configuration of OpenPlotter
 
-![](../.gitbook/assets/usb.png)
+### Configuration of Pypilot \(Optional to use as external IMU\)
 
-![](../.gitbook/assets/nmea.png)
+Pypilot installed and calibrated
 
-## Configuration of OpenCPN
+Select Only compass
 
-![](../.gitbook/assets/opencpn_conn.png)
+Select Tab connections and create connection to Signal K as proposed.
 
-![](../.gitbook/assets/opencpn_tcp.png)
+Open Signal K server
 
-![](../.gitbook/assets/opencpn_udp.png)
+Select Plugin Config
+
+Enable plugin "Convert Signal K to NMEA0183". Enabled: YES
+
+### Configuration of a new Serial I/F to Fenix Autopilot
+
+Connect Fenix autopilot to an USB port
+
+Open Serial application
+
+* Serial Devices: /dev/ttyOP\_fenix
+* data:NMEA0183
+
+Apply Remember device
+
+In the Connections tab, 2 serial connection are displayed, First from Device Fenix Autopilot and second from OpenCPN:
+
+* Device /dev/ ttyACM0 alias /dev/: ttyOP\_fenix data:NMEA0183 
+* Device /dev/ ttyACM0 alias /dev/: data:NMEA0183 Connection: OpenCPN bauds 960
+
+## Configuration of OpenCPN within Openplotter
+
+Set up additional data connections:
+
+* Signal K \(set up by default\)
+* Serial I/O Protocol: 
+  * NMEA 0183 
+  * port: /dev/ttyACM0 
+  * 9600 baud
+  * Select "Exit as autopilot or NMEA repeater"
+  * Talker ID: EC
+  * APB precision: x.xx.
+  * Input filter: Accept only sentences: APHDM, APRSA
+  * Output filter: Transmit sentences: IIHDM, ECAPB
+* Network I/O Protocol: TCP \(Optional, to use Pypilot as external IMU\).
+  * Address: localhost
+  * port: 10110
+  * Select Exit as autopilot or NMEA repeater.
+  * Talker ID: EC
+  * APB precision: x.xx. 
+  * Output filter: Transmit sentences: IIHDM
+  * Input filter: Leave empty.
 
 
 

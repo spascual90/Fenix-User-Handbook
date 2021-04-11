@@ -351,14 +351,17 @@ Fenix and OpenCPN implements NMEA I/F in both directions
 
 ### Data sent by OpenCPN to Fenix Autopilot in ALL working modes from different sources:
 
-* **Windvane and calculations**
 * **External Compass \(only in External Compass mode\):**
-* **GPS Fix**
-* **Speed Log**
+
+> Message: $HDM - Heading Magnetic
 
 {% hint style="warning" %}
-Feature not available in V0.1
+Features below are not available in V2.x
 {% endhint %}
+
+* **Windvane and calculations**
+* **GPS Fix**
+* **Speed Log**
 
 ### Data sent by OpenCPN to Fenix Autopilot in NAV Mode:
 
