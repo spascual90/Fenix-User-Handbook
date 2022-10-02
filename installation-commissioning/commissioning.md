@@ -10,9 +10,9 @@ Before first use of Fenix Autopilot, user shall go through the complete Commissi
 
 #### Switch on
 
-1. Switch on the main power breaker.
+1\. Switch on the main power breaker.
 
-2. The autopilot should beep and display the compass heading. 
+2\. The autopilot should beep and display the compass heading.&#x20;
 
 This shows the autopilot is active. Note: If the tiller pilot does not beep or display the compass heading, please refer to the Fault Finding section.
 
@@ -20,11 +20,11 @@ This shows the autopilot is active. Note: If the tiller pilot does not beep or d
 
 The operating sense defines the direction the tiller pilot will apply helm when a course change key is pressed or the boat goes off course. To check the operating sense:
 
-1. Place the pushrod end over the tiller pin.
+1\. Place the pushrod end over the tiller pin.
 
-2. Press +10.
+2\. Press +10.
 
-3. The helm should move to produce a turn to starboard
+3\. The helm should move to produce a turn to starboard
 
 If the helm produces a turn to port, refer to the following instructions on reversing the operating sense.
 
@@ -51,4 +51,3 @@ To be completed
 {% hint style="danger" %}
 To be completed
 {% endhint %}
-

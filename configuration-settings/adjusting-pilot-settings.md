@@ -14,7 +14,7 @@ You might need to adjust the tiller pilot settings if:
 
 * the pilot does not maintain a selected heading
 * the rudder activity is too high or the course keeping is not tight enough
-* you wish to change the Off Course alarm angle 
+* you wish to change the Off Course alarm angle&#x20;
 
 The [Set Installation Parameters](../using-fenix-tiller-pilot/user-functions.md#set-installation-parameters) function allows you to adjust the following parameters from their factory default settings:
 
@@ -47,7 +47,7 @@ All settings can be changed using the Serial I/F.
 Here you can find a [guide on Serial I/F communications](../using-fenix-tiller-pilot/untitled.md#checksum)
 {% endhint %}
 
-#### To change Installation Parameters 
+#### To change Installation Parameters&#x20;
 
 {% hint style="info" %}
 Installation parameters can be set in Stand-by mode only.
@@ -85,14 +85,14 @@ Side of the boat where the linear actuator is installed.
 * [ ] P - Portboard
 
 {% hint style="warning" %}
-Fenix V0.1 limitation: `Installation Side`is always STARBOARD \(`S`\)
+Fenix V0.1 limitation: `Installation Side`is always STARBOARD (`S`)
 {% endhint %}
 
 ### Rudder Damping
 
 Error in the linear actuator feedback potenciometer may cause the linear actuator to "hunt" when trying to fix a position. Rudder damping identify accepted maximum error in potenciometer signal.
 
-\(0 to any positive value\). Default: 5º
+(0 to any positive value). Default: 5º
 
 ### Magnetic Variation
 
@@ -104,7 +104,7 @@ Positive values means variation to East.
 
 Negative values of means variation to West.
 
-\(-45º;+45º\). Default: 0º.
+(-45º;+45º). Default: 0º.
 
 {% hint style="warning" %}
 Fenix V0.1 limitation: Since external compass feature is not implemented, this parameter is always used by the Autopilot, even when information is received from external sources.
@@ -112,15 +112,15 @@ Fenix V0.1 limitation: Since external compass feature is not implemented, this p
 
 ### Heading Alignment
 
-Installation of Autopilot internal IMU \(electronic magnetic compass\) may not be aligned with boat's steering compass, or a known transit bearing.
+Installation of Autopilot internal IMU (electronic magnetic compass) may not be aligned with boat's steering compass, or a known transit bearing.
 
-\(-180º, 180º\); Default: 0º
+(-180º, 180º); Default: 0º
 
 ### Off course alarm angle
 
 Angle of Off course alarm. This alarm warns if the Autopilot is unable to maintain its course.
 
-\(10º;30º\). Default: 20º.
+(10º;30º). Default: 20º.
 
 ## Gain Parameters
 
@@ -130,18 +130,18 @@ These 3 parameters define the behaviour of the Autopilot in Auto and Track modes
 
 Behaviour and tunning of these parameters are defined in this video.
 
-{% embed url="https://youtu.be/drYO60z6\_h4" %}
+{% embed url="https://youtu.be/drYO60z6_h4" %}
 
 
 
 ### Deadband
 
-Deadband is defined as the angle from Average Course to maximum heading deviation caused by periodic forces \(i.e. waves\). Within deadband, actuator shall stay still.
+Deadband is defined as the angle from Average Course to maximum heading deviation caused by periodic forces (i.e. waves). Within deadband, actuator shall stay still.
 
 Deadband goal is to attenuate fluctuations in linear actuator position. Using deadband will increase the service life of the actuator.
 
 {% hint style="info" %}
-Is very useful for D-part of PID to avoid extreme output values for small changes \(dx/dt\) in signal.
+Is very useful for D-part of PID to avoid extreme output values for small changes (dx/dt) in signal.
 {% endhint %}
 
 User can select different Deadband options:
@@ -153,4 +153,3 @@ User can select different Deadband options:
 {% hint style="info" %}
 If gain parameters are saved, Gain type will be saved and applied per default in the next Autopilot power-on.
 {% endhint %}
-
