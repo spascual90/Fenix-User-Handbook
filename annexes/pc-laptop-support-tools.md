@@ -47,7 +47,7 @@ Move the cursor to the upper-left corner of PuTTY and left-click.
 
 Select "Copy All to Clipboard".
 
-![](<../.gitbook/assets/Sending serial.png>)
+![](../.gitbook/assets/sending-serial.png)
 
 Open Notepad and paste the Clipboard to a txt file.
 
@@ -55,7 +55,7 @@ Open Notepad and paste the Clipboard to a txt file.
 
 Microsoft Windows Tool for flashing Fenix SW (HEX file) to  Fenix autopilot (Arduino).&#x20;
 
-{% file src="../.gitbook/assets/xloader-v1.00[1].zip" %}
+{% file src="../.gitbook/assets/xloader-v1.00-1-.zip" %}
 Download xloader-v1.00 Tool for flashing Fenix SW (HEX file)
 {% endfile %}
 

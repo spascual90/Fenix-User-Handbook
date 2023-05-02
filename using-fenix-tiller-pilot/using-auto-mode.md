@@ -51,7 +51,7 @@ When safely clear of the obstacle, you can either:
 1. Use [Return to initial CTS](user-functions.md#return-to-initial-cts)
 2. CTS will change to initial value when Auto mode was selected.
 
-![](<../.gitbook/assets/return prev CTS.png>)
+![](../.gitbook/assets/return-prev-cts.png)
 
 ## Off course alarm
 

@@ -16,17 +16,32 @@ These activities shall be performed through Serial I/F and before installing Aut
 
 ### Compass calibration
 
+{% hint style="info" %}
+**Prerequisites:** Depending on the IMU device used, calibration procedure can slightly change.
+
+_**MinIMU9V5**_ requires to start procedure with correct axis orientation. IMU Device components shall be on the top before starting Compass calibration.
+
+_**BNO055 IMU Internal Sensor Fusion**_ nothing specific to be taken into account.
+
+_**BNO055 IMU External Sensor Fusion**_ calibrates dynamically and do not require calibration.
+{% endhint %}
+
+![](../.gitbook/assets/20230422\_124401.jpg)
+
 1. In Virtuino App, enter into Compass calibration screen and press Start Calibration button,
 
 ![](<../.gitbook/assets/compass calib.jpg>)
 
 1. From Virtuino App, enter into Compass calibration mode.
-2. To calibrate BNO055 IMU sensor follow the steps:
+2. _**BNO055 IMU Internal Sensor Fusion:**_ To calibrate follow the steps:
    1. Gyroscope Calibration: Place the device in a single stable position to allow the gyroscope to calibrate. Keep this position for a period of few seconds until GYRO register indicates fully calibrated.
    2. Accelerometer Calibration: Place the device in 6 different stable positions for a period of few seconds to allow the accelerometer to calibrate. Repeat until&#x20;
    3. the ACC register indicates fully calibrated.
    4. Magnetometer Calibration: Make some random movements (for example: writing the number ‘8’ on air) until the MAG register indicates fully calibrated.
-3. Verify Calibration: Autopilot will automatically exit Calibration mode after a reasonable time after calibration of each sensor. User shall make additional random movements to cover all different yaw, pitch and roll angles. Make smooth and fast movements. Make movements until MAG register is stable.
+3. _**MinIMU9V5:**_ To calibrate follow the steps:
+   1. Gyroscope and Accelerometer Calibration: Place the device in a single stable position, with device components on top, to allow the gyroscope and Accelerometer to calibrate. Keep this position for a period of few seconds until GYRO and ACC registers indicate fully calibrated.
+   2. Magnetometer Calibration: Make some random movements (for example: writing the number ‘8’ on air) until the MAG register indicates fully calibrated.
+4. Verify Calibration: Autopilot will automatically exit Calibration mode after a reasonable time after calibration of each sensor. User shall make additional random movements to cover all different yaw, pitch and roll angles. Make smooth and fast movements. Make movements until MAG register is stable.
 
 Calibration Verification result,
 
@@ -45,7 +60,7 @@ The 6 stable positions could be in any direction, but make sure that the device 
 Magnetometer in general are susceptible to both hard-iron and soft-iron distortions, but majority of the cases are rather due to the former. And the steps mentioned below are to calibrate the magnetometer for hard-iron distortions. Nevertheless certain precautions need to be taken into account during the positioning of the sensor to avoid unnecessary magnetic influences.
 {% endhint %}
 
-You can find below a Video tutorial by IMU BNO055 Manufacturer.
+_**BNO055 IMU Internal Sensor Fusion:**_ You can find below a Video tutorial by IMU BNO055 Manufacturer.
 
 {% embed url="https://youtu.be/Bw0WuAyGsnY" %}
 
