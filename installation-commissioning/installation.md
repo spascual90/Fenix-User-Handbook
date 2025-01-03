@@ -1,4 +1,4 @@
-# Calibration and set up of Interfaces
+# Calibration of compass and actuator. Set up of Interfaces
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Fenix autopilot is compatible with different types of IMU devices. Each has a di
 
 ## Calibration of Sparkfun IMU ICM20948
 
-All the steps are performed on Fenix\_ICM\_20948\_Cal.py application running and connected via Serial port (USB) to Fenix autopilot version ICM\_20948 (Sparkfun).
+All the steps are performed on [Fenix\_ICM\_20948\_Cal.py](../annexes/fenix_icm_20948.md) application running and connected via Serial port (USB) to Fenix autopilot version ICM\_20948 (Sparkfun).
 
 1. Connect Autopilot version ICM\_20948 (Sparkfun)
 2. Press "Scan Serial Ports" to search for a COM port where Fenix is connected. Press "Connect".
