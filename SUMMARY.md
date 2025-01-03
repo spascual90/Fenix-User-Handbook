@@ -20,7 +20,7 @@
 
 ## Installation & Commissioning <a href="#installation-commissioning" id="installation-commissioning"></a>
 
-* [Calibration and set up of Interfaces](installation-commissioning/installation.md)
+* [Calibration of compass and actuator. Set up of Interfaces](installation-commissioning/installation.md)
 * [Commissioning](installation-commissioning/commissioning.md)
 
 ## CONFIGURATION SETTINGS
@@ -30,3 +30,4 @@
 ## ANNEXES
 
 * [PC/Laptop Support Tools](annexes/pc-laptop-support-tools.md)
+* [Fenix\_ICM\_20948](annexes/fenix_icm_20948.md)
