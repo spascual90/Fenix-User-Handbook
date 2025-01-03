@@ -18,9 +18,10 @@
 
 * [Untitled](maintenance-and-troubleshooting/untitled.md)
 
-## Installation & Commissioning <a id="installation-commissioning"></a>
+## Installation & Commissioning <a href="#installation-commissioning" id="installation-commissioning"></a>
 
 * [Installation](installation-commissioning/installation.md)
+* [Compass calibration](installation-commissioning/compass-calibration.md)
 * [Commissioning](installation-commissioning/commissioning.md)
 
 ## CONFIGURATION SETTINGS
@@ -30,4 +31,3 @@
 ## ANNEXES
 
 * [PC/Laptop Support Tools](annexes/pc-laptop-support-tools.md)
-
