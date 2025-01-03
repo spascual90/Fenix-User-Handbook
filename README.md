@@ -10,8 +10,8 @@ description: User's handbook
 
 ## Applicability
 
-* Fenix autopilot V2.1-beta.1
-* Virtuino App V2.1-beta.1
+* Fenix autopilot V-beta.1
+* Virtuino App V.-beta.1
 
 ## License
 

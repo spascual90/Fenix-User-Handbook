@@ -39,7 +39,7 @@ To avoid an obstacle when your boat is under autopilot control,&#x20;
 
 > For example,&#x20;
 
-![In Virtuino App, press +10 button to increase CTS by 10º ](../.gitbook/assets/dodging-1.png)
+<div align="center"><img src="../.gitbook/assets/dodging-1.png" alt="In Virtuino App, press +10 button to increase CTS by 10º "></div>
 
 When safely clear of the obstacle, you can either:
 
@@ -57,7 +57,7 @@ When safely clear of the obstacle, you can either:
 
 The off course alarm sounds if the locked autopilot heading and the boat’s current heading differ by more than the value set in calibration  parameter `Off course alarm angle` (see [Get Installation Parameters](user-functions.md#get-installation-parameters)) for more than xx seconds. A Warning will be displayed in the Virtuino App.
 
-![](../.gitbook/assets/out\_course.png)
+![](../.gitbook/assets/out_course.png)
 
 ### Cancelling the off course alarm
 
