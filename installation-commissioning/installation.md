@@ -1,18 +1,18 @@
-# Installation
+# Calibration and set up of Interfaces
 
-## Installation Process
+## Introduction
 
-This chapter explains how to install your tiller pilot&#x20;
+This chapter explains how to calibrate your tiller pilot IMU and linear actuator.
 
-## Before Autopilot installation
+{% hint style="warning" %}
+These activities shall be performed through Bluetooth and Serial I/F and before installing Autopilot to the boat,
+{% endhint %}
 
-These activities shall be performed through Serial I/F and before installing Autopilot into boat,
+#### Connect Autopilot to different systems
 
-#### Connect Autopilot to PC/Laptop
-
-* Install serial terminal&#x20;
-* Connect Autopilot to Laptop/PC
-* Connect Autopilot to a 12V source (battery or alternative)
+* Connect Autopilot to Laptop/PC via serial terminal. Check PC/ Laptop Support Tools for help.
+* Connect Autopilot to Fenix App via Bluetooth
+* Connect Autopilot to a 12V source (battery or alternative) for linear actuator calibration
 
 ## Compass calibration
 
@@ -29,8 +29,6 @@ _**BNO055 IMU Internal Sensor Fusion**_ nothing specific to be taken into accoun
 
 _**BNO055 IMU External Sensor Fusion**_ calibrates dynamically and do not require calibration.
 {% endhint %}
-
-## Introduction
 
 Fenix autopilot is compatible with different types of IMU devices. Each has a different calibration procedure.
 
@@ -85,7 +83,7 @@ The 6 stable positions could be in any direction, but make sure that the device 
 Magnetometer in general are susceptible to both hard-iron and soft-iron distortions, but majority of the cases are rather due to the former. And the steps mentioned below are to calibrate the magnetometer for hard-iron distortions. Nevertheless certain precautions need to be taken into account during the positioning of the sensor to avoid unnecessary magnetic influences.
 {% endhint %}
 
-
+## Calibration of BNO055 IMU
 
 {% hint style="warning" %}
 Discontinued IMU: This information is available for Fenix V3.3. We highly recommend to evolve to alternative IMU devices as BNO055 has demostrated low performance.
@@ -101,7 +99,7 @@ _**BNO055 IMU Internal Sensor Fusion:**_ You can find below a Video tutorial by 
 
 {% embed url="https://youtu.be/Bw0WuAyGsnY" %}
 
-### Linear actuator calibration
+## Calibration of Linear Actuator
 
 1. From Virtuino App, enter Linear actuator screen and press Start Calibration.
 

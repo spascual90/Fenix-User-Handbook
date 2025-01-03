@@ -74,7 +74,7 @@ Indicates the linear actuator position when the tiller is aligned with the hull.
 Limit maximum angle of the rudder. It is used to prevent the linear actuator exceeding the rudder angle and damaging the boat. Value 0 reference to Centered Tiller Position.
 
 {% hint style="info" %}
-This value will also be the maximum value of the PID Control output**.**
+This value will also be the maximum value of the PID Control outpu&#x74;**.**
 {% endhint %}
 
 ### Installation Side

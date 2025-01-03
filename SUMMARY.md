@@ -20,8 +20,7 @@
 
 ## Installation & Commissioning <a href="#installation-commissioning" id="installation-commissioning"></a>
 
-* [Installation](installation-commissioning/installation.md)
-* [Compass calibration](installation-commissioning/compass-calibration.md)
+* [Calibration and set up of Interfaces](installation-commissioning/installation.md)
 * [Commissioning](installation-commissioning/commissioning.md)
 
 ## CONFIGURATION SETTINGS
