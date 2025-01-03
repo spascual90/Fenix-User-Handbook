@@ -59,12 +59,12 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 | 1     | 06    | Set PID gain (inc. sample time and deadband)  | [2: PID Gain](untitled.md#additional-field-pid-gain)                                                                                                                                                                           | $PEMC,06,3,0.11,0.7,100,m\*xx                                                    |
 | 1     | 07    | Get Autopilot information                     | [2: APinfo](untitled.md#additional-field-apinfo)                                                                                                                                                                               | $PEMC,07,S,12,35.60,30.02,2,-0.50\*65                                            |
 | 1     | 08    | Request information                           | <p>2: 'I' Request Installation Parameters (message $PEMC,03)</p><p>2: 'G' Request Gain (message $PEMC,05)</p><p>2: 'A' Request Autopilot info. (message $PEMC,07)</p>                                                          | <p>$PEMC,08,I*5A</p><p>$PEMC,08,G*54</p><p>$PEMC,08,A*52</p>                     |
-| 1     | 09    | Enter/ Exit into IMU Calibration mode         | N/A                                                                                                                                                                                                                            | $PEMC,09\*3E                                                                     |
+| 1     | 09    | Enter/ Exit into IMU Calibration mode         | <p>2:'-' Calibration of all sensors in sequence 2:'G' Gyroscope calibration only</p><p>2:'A' Accelerometer calibration only </p><p>2:'M' Magnetometer calibration only</p>                                                     | <p>$PEMC,09,-*xx</p><p>$PEMC,09,G*xx</p><p>$PEMC,09,A*xx</p><p>$PEMC,09,M*xx</p> |
 | 1     | 10    | Enter/ Exit Feedback Calibration mode         | N/A                                                                                                                                                                                                                            | $PEMC,10\*36                                                                     |
 | 1     | 11    | Save values                                   | <p>2: 'I' Save Installation and current Feedback Parameters</p><p>2: 'G' Save current PID Gain parameters</p><p>2: 'C' Save current IMU Offsets</p><p>2: 'R' Restore Inst.Param, Feedback and PID Gain to hardcoded values</p> | <p>$PEMC,11,I*52</p><p>$PEMC,11,G*5C</p><p>$PEMC,11,C*58</p><p>$PEMC,11,R*49</p> |
-| 1     | 12    | IMU Cal.Mode values                           | Cal.Mode values                                                                                                                                                                                                                | $PEMC,12,                                                                        |
+| 1     | 12    | IMU Cal.Mode status                           | Cal.Mode values                                                                                                                                                                                                                | $PEMC,12,                                                                        |
 
-#### &#x20;Additional Field: Change rate [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2FacmjKiNZvOmCvT3sdMR1%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System\_Interfaces?action=edit\&section=9)
+#### &#x20;Additional Field: Change rate [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2FacmjKiNZvOmCvT3sdMR1%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit\&section=9)
 
 | Field | Value | Function                              | Additional Field |
 | ----- | ----- | ------------------------------------- | ---------------- |
@@ -73,7 +73,7 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 | n     | 'r'   | Reduce Current by 1 Position Unit     | N/A              |
 | n     | 'R'   | Reduce Current by 10 Position Uni     | N/A              |
 
-#### &#x20;Additional Field: Installation Parameters [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2FfOfMRFSx9Pu5ReJekINY%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System\_Interfaces?action=edit\&section=10)
+#### &#x20;Additional Field: Installation Parameters [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2FfOfMRFSx9Pu5ReJekINY%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit\&section=10)
 
 | Field | Value        | Function                     | Additional Field |
 | ----- | ------------ | ---------------------------- | ---------------- |
@@ -87,7 +87,7 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 | n+6   | Float        | Heading Alignment            | N/A              |
 | n+7   | Positive Int | Off course alarm angle       | N/A              |
 
-#### &#x20;Additional Field: PID Gain [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2Fq2R7cAPb2cDKJIdSPnwG%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System\_Interfaces?action=edit\&section=11)
+#### &#x20;Additional Field: PID Gain [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2Fq2R7cAPb2cDKJIdSPnwG%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit\&section=11)
 
 | Field | Value         | Function           | Additional Field |
 | ----- | ------------- | ------------------ | ---------------- |
@@ -99,7 +99,7 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 | n+4   | 'M'           | Deadband: Max      | N/A              |
 | n+4   | 'A'           | Deadband: Auto     | N/A              |
 
-#### &#x20;Additional Field: APinfo [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2FC0vHPcXOrfRFakN9kyMY%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System\_Interfaces?action=edit\&section=12)
+#### &#x20;Additional Field: APinfo [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2FC0vHPcXOrfRFakN9kyMY%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit\&section=12)
 
 | Field | Value        | Function                               | Additional Field |
 | ----- | ------------ | -------------------------------------- | ---------------- |
@@ -113,7 +113,7 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 | n+4   | Positive int | Deadband value                         | N/A              |
 | n+5   | Float        | Trimming value                         | N/A              |
 
-#### Additional Field: IMU Cal. values [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2Fq3Nzt2jzMSVFIUKTf19q%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System\_Interfaces?action=edit\&section=12)
+#### Additional Field: IMU Cal. values [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2Fq3Nzt2jzMSVFIUKTf19q%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit\&section=12)
 
 | Field | Value           | Function                                                     | Additional Field |
 | ----- | --------------- | ------------------------------------------------------------ | ---------------- |
@@ -132,7 +132,7 @@ Fenix V0.1 bug: Message 06, always include `m, M or A` deadband value or system 
 |       |                 |                                                              |                  |
 |       |                 |                                                              |                  |
 
-#### Additional Field: IMU Cal. values [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2Fxziw9SatxmPw0FJi7bue%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System\_Interfaces?action=edit\&section=12)
+#### Additional Field: IMU Cal. values [![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M1IFMsiQH0N5uEseRXb%2Fuploads%2Fxziw9SatxmPw0FJi7bue%2Ffile.gif?alt=media)](https://emacua.fandom.com/wiki/System_Interfaces?action=edit\&section=12)
 
 | Field | Value | Function           | Additional Field |
 | ----- | ----- | ------------------ | ---------------- |
