@@ -442,27 +442,6 @@ These functions are only available in Stand-by mode
 
 This function allows user to calibrate the internal compass (IMU).
 
-* In Virtuino App, Stand-by mode,
-* Access to Compass Calibration through Configuration panel,
-
-![](<../.gitbook/assets/Screenshot_20210109-205045_Virtuino (1).jpg>)
-
-![](../.gitbook/assets/Screenshot_20210109-205059_Virtuino.jpg)
-
-* Press Start Button to launch the calibration process,
-
-![](../.gitbook/assets/Screenshot_20210109-205106_Virtuino.jpg)
-
-* Along calibration, the status of the different sensors will be displayed. Status 3 will represent a sensor fully calibrated.
-
-![](../.gitbook/assets/Screenshot_20210109-205114_Virtuino.jpg)
-
-Follow the calibration procedure described in the screen until all sensors are fully calibrated (All green).
-
-![](../.gitbook/assets/Screenshot_20210109-205217_Virtuino.jpg)
-
-You will have additional time to check X, Y, Z axes and bearing values. Once the time has expired, Save and Exit Buttons will be enabled again.
-
 * Press Save Button.
 
 {% hint style="success" %}
@@ -470,16 +449,6 @@ Once the compass is calibrated and values saved, the calibration profile will be
 
 If you are satified with the result of the calibration process, press Save Button to be used by the autopilot every time it is powered on.
 {% endhint %}
-
-> **Serial I/F $PEMC Code:**&#x20;
->
-> **09 (Start IMU Calibration Mode)**
->
-> > Serial I/F Sentence: $PEMC,09\*3E
-
-> **11 (Save IMU Calibration Values)**
->
-> Serial I/F Sentence: $PEMC,11,I\*52
 
 ### Enter/Exit linear actuator calibration mode
 

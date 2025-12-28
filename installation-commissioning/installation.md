@@ -21,20 +21,16 @@ These activities shall be performed through Bluetooth and Serial I/F and before 
 
 **Sparkfun IMU ICM20948:** This IMU has the best performance among all and is strongly recommended. For calibration, Fenix\_ICM\_20948\_Cal (Python application running on Windows/ Linux) is required.
 
-_**Pololu MinIMU9V5**_ requires to start procedure with correct axis orientation. IMU Device components shall be on the top before starting Compass calibration. Connection to PC/ Laptop is recommended but not mandatory.
-
 **Discontinued IMU after Fenix V3.3:**
 
 _**BNO055 IMU Internal Sensor Fusion**_ nothing specific to be taken into account.
 
 _**BNO055 IMU External Sensor Fusion**_ calibrates dynamically and do not require calibration.
+
+_**Pololu MinIMU9V5**_
 {% endhint %}
 
-Fenix autopilot is compatible with different types of IMU devices. Each has a different calibration procedure.
-
-* Sparkfun IMU ICM20948: This IMU has the best performance among all and is strongly recommended. For calibration, Fenix\_ICM\_20948\_Cal (Python application running on Windows/ Linux) is required.
-* Pololu MinIMU9V5. Has a good performance but less precisse and slower than ICM20948. Calibration of this IMU is very simple and can be done with Fenix App (mobile phone). If you don't have computer skills is a good alternative.
-* Adafruit BNO055 is discontinued by the supplier and available units have demostrate low reliability. Is not supported by Fenix versions after V3.3.
+Fenix autopilot is compatible with Sparkfun IMU ICM20948: This IMU has the best performance among all. For calibration, Fenix\_ICM\_20948\_Cal (Python application running on Windows/ Linux) is required.
 
 ## Calibration of Sparkfun IMU ICM20948
 
@@ -50,63 +46,14 @@ All the steps are performed on [Fenix\_ICM\_20948\_Cal.py](../annexes/fenix_icm_
 5. Press "Send offsets to autopilot". 3 NMEA sentences (1 per sensor) will be sent to Fenix autopilot.
 6. Press "Save offsets sent to autopilot". Offsets will be permanently stored into Fenix autopilot.
 
-## Calibration of Pololu MinIMU9V5
-
-Start procedure with IMU components on top.
-
-![](../.gitbook/assets/20230422_124401.jpg)
-
-1. In Virtuino App, enter into Compass calibration screen and press Start Calibration button,
-
-![](<../.gitbook/assets/compass calib.jpg>)
-
-1. From Virtuino App, enter into Compass calibration mode.
-2. To calibrate follow the steps:
-3. Gyroscope and Accelerometer Calibration: Place the device in a single stable position, with device components on top, to allow the gyroscope and Accelerometer to calibrate. Keep this position for a period of few seconds until GYRO and ACC registers indicate fully calibrated.
-4. Magnetometer Calibration: Make some random movements (for example: writing the number ‘8’ on air) until the MAG register indicates fully calibrated.
-5. Verify Calibration: Autopilot will automatically exit Calibration mode after a reasonable time after calibration of each sensor. User shall make additional random movements to cover all different yaw, pitch and roll angles. Make smooth and fast movements. Make movements until MAG register is stable.
-
-Calibration Verification result,
-
-* [x] Calibration OK: Press "Save" button to store Compass calibration values for later use.
-* [ ] Calibration KO: repeat Compass calibration process.
-
-Once the compass is calibrated and values saved, the calibration profile will be reused to get the correct orientation data immediately after Power-on Autopilot.
-
-{% hint style="info" %}
-Make sure that there is slow movement between 2 stable positions
-
-The 6 stable positions could be in any direction, but make sure that the device is lying at least once perpendicular to the x, y and z axis.
-{% endhint %}
-
-{% hint style="info" %}
-Magnetometer in general are susceptible to both hard-iron and soft-iron distortions, but majority of the cases are rather due to the former. And the steps mentioned below are to calibrate the magnetometer for hard-iron distortions. Nevertheless certain precautions need to be taken into account during the positioning of the sensor to avoid unnecessary magnetic influences.
-{% endhint %}
-
-## Calibration of BNO055 IMU
-
-{% hint style="warning" %}
-Discontinued IMU: This information is available for Fenix V3.3. We highly recommend to evolve to alternative IMU devices as BNO055 has demostrated low performance.
-{% endhint %}
-
-_**BNO055 IMU Internal Sensor Fusion:**_ To calibrate follow the steps:
-
-1. Gyroscope Calibration: Place the device in a single stable position to allow the gyroscope to calibrate. Keep this position for a period of few seconds until GYRO register indicates fully calibrated.
-2. Accelerometer Calibration: Place the device in 6 different stable positions for a period of few seconds to allow the accelerometer to calibrate. Repeat until the ACC register indicates fully calibrated.
-3. Magnetometer Calibration: Make some random movements (for example: writing the number ‘8’ on air) until the MAG register indicates fully calibrated.
-
-_**BNO055 IMU Internal Sensor Fusion:**_ You can find below a Video tutorial by IMU BNO055 Manufacturer.
-
-{% embed url="https://youtu.be/Bw0WuAyGsnY" %}
-
 ## Calibration of Linear Actuator
 
 1. From Virtuino App, enter Linear actuator screen and press Start Calibration.
 
 ![](<../.gitbook/assets/linear calib.jpg>)
 
-1. Press "Right Arrow" button extend linear actuator up to the complete extension of the linear actuator.
-2. Press "Left Arrow" button to retract linear actuator up to the complete retraction of the linear actuator.
+1. Press "Right Arrow" button extend linear actuator up to the extension of the linear actuator which makes rudder angle to 35 degrees (35 degrees to turn starboard).
+2. Press "Left Arrow" button to retract linear actuator up to the retraction of the linear actuator which makes rudder angle to -35 degrees (35 degrees to turn portboard).
 3. Press "Save" button to save linear actuator offsets
 4. Exit calibration screen pressing "Tick" button.
 
