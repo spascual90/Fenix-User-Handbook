@@ -2,7 +2,8 @@
 
 In Track mode, the autopilot maintains a track between waypoints created on a navigation system. The autopilot receives any course changes to keep your boat on track. To operate in Track mode, the tiller pilot must receive APB information from either:
 
-* OpenCPN, or
+* OpenCPN,&#x20;
+* AVNav, or
 * any navigation system transmitting NMEA 0183 APB messages.
 
 ### Enter into Track mode

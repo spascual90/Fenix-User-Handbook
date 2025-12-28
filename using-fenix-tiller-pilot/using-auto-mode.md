@@ -18,7 +18,7 @@ To return to hand steering:
 
 In Auto mode,&#x20;
 
-use [Control Course to Steer](user-functions.md#control-course-to-steer) to change course in steps of 1° and 10°.
+use [Control Course to Steer](user-functions.md#control-course-to-steer) to change course in steps of +/-1° or +/-10°.
 
 For example: press -10 three times for a 30° course change to port:
 
@@ -75,18 +75,16 @@ When the tiller pilot is set to Auto Deadband, the pilot will gradually ignore r
 
 By preventing unnecessary rudder movement, Auto Deadband provides the best compromise between power consumption and course keeping accuracy.&#x20;
 
-If you want to switch off the Auto Deadband feature:&#x20;
+If you want to change the configuration of Deadband feature:&#x20;
 
-1. From Stand by, Auto or Track mode, [Set new Autopilot gain](user-functions.md)  and change parameter  `Deadband Type` to switch from Auto (`A`) to Fixed Deadband:
+1. In Stand by, Auto or Track mode, in Virtuino App go to Configuration Pannel.
+2. Pressing Deadband selection button, the configuration will go through 3 different configurations:
 
-* [x] Fixed Minimum Deadband (`m`): Minimum deadband provides the tightest course keeping possible, at the expense of increased power consumption and drive unit activity.
-* [x] Fixed Maximum Deadband (`M`): Maximum deadband provides the loosest course keeping, maximizing power saving and minimizing drive unit activity.
+* [x] Fixed Minimum Deadband (`m`): Minimum deadband provides the tightest course keeping possible, at the expense of increased power consumption and drive unit activity. Hardcoded to 2.5 deg.
+* [x] Fixed Maximum Deadband (`M`): Maximum deadband provides the loosest course keeping, maximizing power saving and minimizing drive unit activity. Hardcoded to 5.0 deg.
+* [x] Automatic Deadband (A): Autopilot will adjust deadband to the sea state to balance course accurancy and minimum drive unit activity.
 
-To switch back to Auto Deadband,&#x20;
+Current Deadband value can be monitored in Virtuino App, Configuration Pannel. Blue led is on when heading is within current deadband.
 
-1. [Set new Autopilot gain](user-functions.md)  and change parameter  `Deadband Type` to Auto (`A`)
-
-Current Deadband value can be monitored in Virtuino App, Configuration pannel. Blue led is on when heading is within current deadband.
-
-![](../.gitbook/assets/deadband.png)
+![Configuration panel - Deadband selection button](<../.gitbook/assets/Screenshot_20251228-192200 (1).png>)
 
